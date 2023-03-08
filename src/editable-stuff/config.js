@@ -56,7 +56,7 @@ const about = {
     // soluciones y prácticas innovadoras. Asimismo, soy un colaborador comprometido y poseo habilidades sociales 
     // que me permiten trabajar en equipo de manera efectiva. Mi experiencia previa en proyectos grupales respalda 
     // mi capacidad para contribuir de manera significativa al éxito del proyecto.`,
-  resume: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
+  resume: require("../editable-stuff/resume.pdf"),
 };
 
 // PROJECTS SECTION
