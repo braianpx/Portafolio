@@ -67,20 +67,27 @@ code {
     background-color: rgba(0, 0, 0, 0.05);
   }
 }
-.socialicons {
+.socialicons-github, .socialicons-linkedin{
   color: white;
   padding-left: 5px;
   padding-right: 5px;
   transition: all 0.8s;
   margin: 4px;
-  &:hover {
-    color: black;
-    padding-left: 5px;
-    padding-right: 5px;
-    transition: all 0.8s;
-    margin: 4px;
-  }
 }
+.socialicons-linkedin:hover {
+  color: rgba(4, 106, 222, 0.677);
+  padding-left: 5px;
+  padding-right: 5px;
+  transition: all 0.8s;
+  margin: 4px;
+} 
+.socialicons-github:hover {
+  color: rgb(72, 72, 72);
+  padding-left: 5px;
+  padding-right: 5px;
+  transition: all 0.8s;
+  margin: 4px;
+} 
 
 .title {
   height: 100%;

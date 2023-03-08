@@ -34,7 +34,7 @@ const MainBody = React.forwardRef(
                 href={icon.url}
                 aria-label={`My ${icon.image.split("-")[1]}`}
               >
-                <i className={`fab ${icon.image}  fa-3x socialicons`} />
+                <i className={`fab ${icon.image}  fa-3x socialicons-${icon.image.split("-")[1]} `} />
               </a>
             ))}
           </div>
@@ -44,7 +44,15 @@ const MainBody = React.forwardRef(
             role="button"
             aria-label="Learn more about me"
           >
-            More about me
+            Mas Sobre Mi
+          </a>
+          <a
+            className="btn btn-outline-light btn-lg ms-3"
+            href="#aboutme"
+            role="button"
+            aria-label="Learn more about me"
+          >
+            Descargar CV
           </a>
         </Container>
       </Jumbotron>
