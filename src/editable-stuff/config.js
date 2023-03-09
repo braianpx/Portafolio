@@ -64,12 +64,90 @@ const about = {
 //      i.e: reposLength: 0,
 // If you want to display specfic projects, add the repository names,
 //      i.e ["repository-1", "repo-2"]
-const repos = {
+const projects = {
   show: true,
   heading: "Proyectos",
-  gitHubUsername: "braianpx", //i.e."johnDoe12Gh"
-  reposLength: 4,
-  specificRepos: [],
+  gitHubUsername: "braianpx",
+  projects:[
+    {
+      completed:false,
+      name:'Banco Saint Patrick',
+      description:'',
+      rol:'Back End Developer',
+      technologies:{
+        frontEnd:['JavaScript','React','Redux','HTML','CSS'],
+        backEnd:['TypeScript','Express','Sequelize','PostgreSQL','Nest']
+      },
+      image:'',
+      link:'',
+      repo:''
+    },
+    {
+      completed:true,
+      name:'Psiconnect',
+      description:'',
+      rol:'Full Stack Developer',
+      technologies:{
+        frontEnd:['JavaScript','React','Redux-Toolkit','HTML','CSS'],
+        backEnd:['Node.js','Express','Sequelize','PostgreSQL','FireBase','Cloudinary']
+      },
+      image:'',
+      link:'https://psiconnect.vercel.app/',
+      repo:''
+    },
+    {
+      completed:true,
+      name:'Terapeando',
+      description:'',
+      rol:'Back End Developer',
+      technologies:{
+        frontEnd:['JavaScript','React','Redux','HTML','CSS','Chakra UI'],
+        backEnd:['TypeScript','Express','MongoDB','Typegoose','Mongoose']
+      },
+      image:'',
+      link:'',
+      repo:''
+    },
+    {
+      completed:false,
+      name:'Tienda Samira',
+      description:'',
+      rol:'Full Stack Developer',
+      technologies:{
+        frontEnd:['JavaScript','React','Redux-Toolkit','HTML','CSS'],
+        backEnd:['Node.js || TypeScript','Express','Sequelize','PostgreSQL']
+      },
+      image:'',
+      link:'',
+      repo:''
+    },
+    {
+      completed:true,
+      name:'Dogs Pi',
+      description:'',
+      rol:'Full Stack Developer',
+      technologies:{
+        frontEnd:['JavaScript','React','Redux','HTML','CSS'],
+        backEnd:['Node.js','Express','Sequelize','PostgreSQL']
+      },
+      image:'',
+      link:'',
+      repo:''
+    },
+    {
+      completed:false,
+      name:'Weather App',
+      description:'',
+      rol:'Full Stack Developer',
+      technologies:{
+        frontEnd:['JavaScript','React','Redux','HTML','CSS'],
+        backEnd:['TypeScript','Express','MongoDB','Typegoose','Mongoose']
+      },
+      image:'',
+      link:'',
+      repo:''
+    }
+  ]
 };
 
 // Leadership SECTION
@@ -181,4 +259,4 @@ const experiences = {
 //   show: false,
 // };
 
-export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences, contact };
+export { navBar, mainBody, about, projects, skills, leadership, getInTouch, experiences, contact };
