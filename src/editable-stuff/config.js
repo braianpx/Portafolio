@@ -70,82 +70,107 @@ const projects = {
   gitHubUsername: "braianpx",
   projects:[
     {
-      completed:false,
+      completed:true,
       name:'Banco Saint Patrick',
-      description:'',
+      description:[`Api Rest escalable para el sistema de Saint Patrick Bank que incluye: 
+      Tokens, filtros de datos, manejo de datos, sistema de transferencias, creación de 
+      tarjetas de debito propias del banco, opciones para añadir tarjetas externas, 
+      creación de una billetera virtual única por cada usuario y registro de usuarios.`],
       rol:'Back End Developer',
       technologies:{
-        frontEnd:['JavaScript','React','Redux','HTML','CSS'],
-        backEnd:['TypeScript','Express','Sequelize','PostgreSQL','Nest']
+        frontEnd:[null],
+        backEnd:['TypeScript','Nest','Express','PostgreSQL','TypeOrm','node.js']
       },
-      image:'',
-      link:'',
-      repo:''
+      image:null,
+      link:null,
+      repo:'https://github.com/Saint-Patrick-Patrick/Saint-Patrick-API',
+      color:'green'
     },
     {
       completed:true,
       name:'Psiconnect',
-      description:'',
+      description:[
+      `Psiconnect es una plataforma en línea que ofrece servicios de asesoramiento y terapia 
+      psicológica, creada como proyecto final del programa de formación en desarrollo web Full Stack de 
+      SoyHenry. Su principal objetivo es brindar a los usuarios una experiencia de atención psicológica 
+      personalizada y accesible en cualquier momento y lugar.`,
+      `La plataforma cuenta con una API REST y SPA, las cuales fueron desarrolladas por un equipo multidisciplinario. 
+      Como miembro del equipo participé activamente en el desarrollo de ambas.`, 
+      `Esta app incluye la implementación de diversas funcionalidades, tales como la búsqueda, filtrado y ordenamiento 
+      de información, inicio de sesión para administradores y usuarios, registro de usuarios, calendario, notificaciones 
+      por correo electrónico, pasarela de pagos, paneles de administrador y usuario, sistema de calificaciones y reseñas 
+      de usuarios, entre otras. Todo esto con el objetivo de proporcionar una experiencia de usuario fluida y eficiente.`],
+      // description:`Api Rest y SPA de una red social de psicólogos donde ofrecen sus servicios que incluye: Búsqueda, Filtrado, Ordenamiento, Inicio de sesión 
+      // admin/usuario, Registro de usuario, calendario, notificaciones por mail, pasarela de pagos, 
+      // paneles de admin/usuario, calificaciones de usuario, reseña de usuario y más.`,
       rol:'Full Stack Developer',
       technologies:{
         frontEnd:['JavaScript','React','Redux-Toolkit','HTML','CSS'],
-        backEnd:['Node.js','Express','Sequelize','PostgreSQL','FireBase','Cloudinary']
+        backEnd:['JavaScript','Node.js','Express','Sequelize','PostgreSQL','FireBase','Cloudinary']
       },
-      image:'',
-      link:'https://psiconnect.vercel.app/',
-      repo:''
+      image:require('../assets/img/projects/Psiconnect.png'),
+      link:'https://psiconnect.vercel.app',
+      repo:'https://github.com/orgs/Psiconnect/repositories',
+      color:'cadetblue'
     },
     {
       completed:true,
       name:'Terapeando',
-      description:'',
+      description:[],
       rol:'Back End Developer',
       technologies:{
-        frontEnd:['JavaScript','React','Redux','HTML','CSS','Chakra UI'],
-        backEnd:['TypeScript','Express','MongoDB','Typegoose','Mongoose']
+        frontEnd:[null],
+        backEnd:['TypeScript','Express','MongoDB','Typegoose','Mongoose','Node.js']
       },
-      image:'',
-      link:'',
-      repo:''
+      image:require('../assets/img/projects/Terapeando.png'),
+      link:'https://terapeando.vercel.app',
+      repo:'https://github.com/DaniHellN25/Proyecto-Grupal',
+      color:'wheat'
     },
     {
       completed:false,
       name:'Tienda Samira',
-      description:'',
+      description:[],
       rol:'Full Stack Developer',
       technologies:{
-        frontEnd:['JavaScript','React','Redux-Toolkit','HTML','CSS'],
-        backEnd:['Node.js || TypeScript','Express','Sequelize','PostgreSQL']
+        frontEnd:['JavaScript','React','Redux-Toolkit','HTML','CSS','Chakra UI'],
+        backEnd:['TypeScript','Express','Sequelize','PostgreSQL','Node.js']
       },
-      image:'',
-      link:'',
-      repo:''
+      image:null,
+      link:null,
+      repo:null,
+      color:'black'
     },
     {
       completed:true,
       name:'Dogs Pi',
-      description:'',
+      description:[`Colaborar en Administrar, Planificar, Proponer nuevas ideas y desarrollar 
+      una app de psicólogos que incluye: Búsqueda, Filtrado, Ordenamiento, Inicio de sesión 
+      admin/usuario, Registro de usuario, calendario, notificaciones por mail, pasarela de pagos, 
+      paneles de admin/usuario, calificaciones de usuario, reseña de usuario y más.`],
       rol:'Full Stack Developer',
       technologies:{
         frontEnd:['JavaScript','React','Redux','HTML','CSS'],
-        backEnd:['Node.js','Express','Sequelize','PostgreSQL']
+        backEnd:['TypeScript','Node.js','Express','Sequelize','PostgreSQL']
       },
-      image:'',
-      link:'',
-      repo:''
+      image:require('../assets/img/projects/Dogs-PI.png'),
+      link:'https://dogs-pi-braianpx.vercel.app',
+      repo:'https://github.com/braianpx/Dogs-Pi',
+      color:'mediumturquoise'
     },
     {
       completed:false,
       name:'Weather App',
-      description:'',
+      description:[],
       rol:'Full Stack Developer',
       technologies:{
         frontEnd:['JavaScript','React','Redux','HTML','CSS'],
         backEnd:['TypeScript','Express','MongoDB','Typegoose','Mongoose']
       },
-      image:'',
-      link:'',
-      repo:''
+      image:null,
+      link:null,
+      repo:null,
+      color:'black'
     }
   ]
 };
@@ -196,6 +221,7 @@ const skills = {
     { name: "Scrum", img: require('../assets/img/logos/scrum-logo.png') },
     { name: "Trello", img: require('../assets/img/logos/trello-logo.png') },
     { name: "Git", img:  require('../assets/img/logos/git-logo.png') },
+    { name:'NestJS', img: require('../assets/img/logos/nestjs-logo.png')},
   ],
   softSkills: [
     { name: "Trabajo En Equipo", img: false },
