@@ -17,7 +17,7 @@ const Project = ({ heading, username, projects }) => {
     <Jumbotron fluid id="projects" className="bg-light m-0">
       <Container className="">
         <h2 className="display-4 pb-5 text-center">{heading}</h2>
-        <Row style={{border:'1px solid red'}}>
+        <Row>
           {projectsArray?.at(0) &&
              projectsArray.map((project, index) => (
               <ProjectCard

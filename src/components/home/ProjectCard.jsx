@@ -19,7 +19,7 @@ const ProjectCard = ({ value }) => {
         <Card.Body>
           <Card.Title as="h4" >{name} </Card.Title>
           <Card.Title as="h5" className="my-2" style={{color:`${color}`}}>{rol}</Card.Title>
-          <Card.Text>{ description } </Card.Text>
+          <Description description={description} />
           <ImgCard image={image || require('../../assets/img/projects/Proceso.png')} />
           <Technologies technologies={technologies} />
           <CardButtons link={link} repo={repo || 'https://github.com/braianpx'} color={color} />
@@ -72,7 +72,7 @@ const ImgCard = ({image}) => {
 const Technologies = ({technologies}) => {
   return(
     <>
-    <Card.Subtitle as='h5' className="mt-2">Technologies</Card.Subtitle>
+    <Card.Subtitle as='h5' className="mt-2">Tecnologias</Card.Subtitle>
       
     {technologies.frontEnd[0] &&  
       <div className="mt-2"> 
@@ -97,5 +97,15 @@ const Technologies = ({technologies}) => {
     </>
     )
 }
+
+const Description = ({description}) =>{
+  return(
+    <>
+      {
+        description?.map(el=>  <Card.Text>{el} </Card.Text>)
+      }
+    </>
+  )
+} 
 
 export default ProjectCard;

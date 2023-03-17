@@ -72,10 +72,13 @@ const projects = {
     {
       completed:true,
       name:'Banco Saint Patrick',
-      description:[`Api Rest escalable para el sistema de Saint Patrick Bank que incluye: 
-      Tokens, filtros de datos, manejo de datos, sistema de transferencias, creación de 
-      tarjetas de debito propias del banco, opciones para añadir tarjetas externas, 
-      creación de una billetera virtual única por cada usuario y registro de usuarios.`],
+      description:[`Saint Patrick Bank es una plataforma financiera que ofrece a sus usuarios una 
+      wallet online de fácil acceso y uso, que permite al usuario agregar tarjetas externas y realizar 
+      transferencias a distintos bancos.`,
+      `Cuenta con una API REST y SPA, mi aporte se enfocó en el desarrollo de la API REST, que incluye 
+      funcionalidades como tokens, filtros y manejo de datos, transferencias, creación de tarjetas de débito 
+      del banco, opciones para agregar tarjetas externas, creación de billeteras virtuales únicas por usuario 
+      y registro de usuarios.`],
       rol:'Back End Developer',
       technologies:{
         frontEnd:[null],
@@ -94,9 +97,8 @@ const projects = {
       psicológica, creada como proyecto final del programa de formación en desarrollo web Full Stack de 
       SoyHenry. Su principal objetivo es brindar a los usuarios una experiencia de atención psicológica 
       personalizada y accesible en cualquier momento y lugar.`,
-      `La plataforma cuenta con una API REST y SPA, las cuales fueron desarrolladas por un equipo multidisciplinario. 
-      Como miembro del equipo participé activamente en el desarrollo de ambas.`, 
-      `Esta app incluye la implementación de diversas funcionalidades, tales como la búsqueda, filtrado y ordenamiento 
+      `Cuenta con una API REST y SPA, mi aporte no se enfonco en el desarrollo de una en general sino en el desarrollo de ambas, 
+      incluye la implementación de diversas funcionalidades, tales como la búsqueda, filtrado y ordenamiento 
       de información, inicio de sesión para administradores y usuarios, registro de usuarios, calendario, notificaciones 
       por correo electrónico, pasarela de pagos, paneles de administrador y usuario, sistema de calificaciones y reseñas 
       de usuarios, entre otras. Todo esto con el objetivo de proporcionar una experiencia de usuario fluida y eficiente.`],
