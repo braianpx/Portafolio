@@ -11,7 +11,8 @@ const ProjectCard = ({ value }) => {
     technologies,
     image,
     repo,
-    color
+    color,
+    responsive
   } = value;
   return (
     <Col md={6}>
@@ -22,6 +23,7 @@ const ProjectCard = ({ value }) => {
           <Description description={description} />
           <ImgCard image={image || require('../../assets/img/projects/Proceso.png')} />
           <Technologies technologies={technologies} />
+          <p className="text mt-2"><span style={{fontWeight:'500'}}>Responsive:</span>{responsive? ' Yes':' No'}</p>
           <CardButtons link={link} repo={repo || 'https://github.com/braianpx'} color={color} />
           <hr />
         </Card.Body>
