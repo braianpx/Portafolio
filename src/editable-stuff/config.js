@@ -80,6 +80,7 @@ const projects = {
       del banco, opciones para agregar tarjetas externas, creación de billeteras virtuales únicas por usuario 
       y registro de usuarios.`],
       rol:'Back End Developer',
+      responsive:true,
       technologies:{
         frontEnd:[null],
         backEnd:['TypeScript','Nest','Express','PostgreSQL','TypeOrm','node.js']
@@ -106,6 +107,7 @@ const projects = {
       // admin/usuario, Registro de usuario, calendario, notificaciones por mail, pasarela de pagos, 
       // paneles de admin/usuario, calificaciones de usuario, reseña de usuario y más.`,
       rol:'Full Stack Developer',
+      responsive:true,
       technologies:{
         frontEnd:['JavaScript','React','Redux-Toolkit','HTML','CSS'],
         backEnd:['JavaScript','Node.js','Express','Sequelize','PostgreSQL','FireBase','Cloudinary']
@@ -120,6 +122,7 @@ const projects = {
       name:'Terapeando',
       description:[],
       rol:'Back End Developer',
+      responsive:true,
       technologies:{
         frontEnd:[null],
         backEnd:['TypeScript','Express','MongoDB','Typegoose','Mongoose','Node.js']
@@ -134,6 +137,7 @@ const projects = {
       name:'Tienda Samira',
       description:[],
       rol:'Full Stack Developer',
+      responsive:true,
       technologies:{
         frontEnd:['JavaScript','React','Redux-Toolkit','HTML','CSS','Chakra UI'],
         backEnd:['TypeScript','Express','Sequelize','PostgreSQL','Node.js']
@@ -151,9 +155,10 @@ const projects = {
       admin/usuario, Registro de usuario, calendario, notificaciones por mail, pasarela de pagos, 
       paneles de admin/usuario, calificaciones de usuario, reseña de usuario y más.`],
       rol:'Full Stack Developer',
+      responsive:true,
       technologies:{
         frontEnd:['JavaScript','React','Redux','HTML','CSS'],
-        backEnd:['TypeScript','Node.js','Express','Sequelize','PostgreSQL']
+        backEnd:['JavaScript','Node.js','Express','Sequelize','PostgreSQL']
       },
       image:require('../assets/img/projects/Dogs-PI.png'),
       link:'https://dogs-pi-braianpx.vercel.app',
@@ -161,17 +166,21 @@ const projects = {
       color:'mediumturquoise'
     },
     {
-      completed:false,
+      completed:true,
       name:'Weather App',
-      description:[],
+      description:[`Weather App es una aplicación web desarrollada de manera independiente que permite 
+      a los usuarios ver el clima actual en diferentes ciudades del mundo.`, 
+      `Incluye una API REST y una SPA y cuenta con funciones como registro de usuarios, capacidad de 
+      agregar ciudades a favoritos y visualización de información detallada o resumida del clima.`],
       rol:'Full Stack Developer',
+      responsive:true,
       technologies:{
-        frontEnd:['JavaScript','React','Redux','HTML','CSS'],
+        frontEnd:['JavaScript','React','Redux','HTML','CSS','Bootstrap'],
         backEnd:['TypeScript','Express','MongoDB','Typegoose','Mongoose']
       },
-      image:null,
+      image:require('../assets/img/projects/weather-app.png'),
       link:null,
-      repo:null,
+      repo:'https://github.com/braianpx/Weather-App',
       color:'black'
     }
   ]
