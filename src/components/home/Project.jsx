@@ -1,10 +1,10 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import { Jumbotron } from "./migration";
 import Row from "react-bootstrap/Row";
 import ProjectCard from "./ProjectCard";
 
-const Project = ({ heading, username, projects }) => {
+const Project = ({ heading, projects }) => {
 
   const [projectsArray, setProjectsArray] = useState([]);
   useEffect(()=>{
