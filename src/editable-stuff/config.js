@@ -80,7 +80,7 @@ const projects = {
       del banco, opciones para agregar tarjetas externas, creación de billeteras virtuales únicas por usuario 
       y registro de usuarios.`],
       rol:'Back End Developer',
-      responsive:true,
+      responsive:false,
       technologies:{
         frontEnd:[null],
         backEnd:['TypeScript','Nest','Express','PostgreSQL','TypeOrm','node.js']
@@ -120,7 +120,13 @@ const projects = {
     {
       completed:true,
       name:'Terapeando',
-      description:[],
+      description:[`Aplicacion web de terapia online que conecta a usuarios y psicólogos con el objetivo de facilitar el 
+      acceso a la salud mental.`,
+      `cuenta con una API REST y una SPA, mi aporte se enfoco en el desarrollo de la API REST.
+      incluye las siguientes funcionalidades:sistema de reservas, inicio de sesión con Google y simple login, integración 
+      con Stripe para pagos, correos de confirmación y recuperación de contraseña con Nodemailer, Google Maps API, un blog, 
+      filtros y ordenamiento, y más`
+      ],
       rol:'Back End Developer',
       responsive:true,
       technologies:{
@@ -150,10 +156,11 @@ const projects = {
     {
       completed:true,
       name:'Dogs Pi',
-      description:[`Colaborar en Administrar, Planificar, Proponer nuevas ideas y desarrollar 
-      una app de psicólogos que incluye: Búsqueda, Filtrado, Ordenamiento, Inicio de sesión 
-      admin/usuario, Registro de usuario, calendario, notificaciones por mail, pasarela de pagos, 
-      paneles de admin/usuario, calificaciones de usuario, reseña de usuario y más.`],
+      description:[`Dogs Pi es una aplicación web desarrollada como Proyecto Individual para Henry Bootcamp,
+      Su objetivo es compartir informacion sobre distintas razas de perros.`,`La aplicación cuenta con una API y una SPA,
+      ambas fueron desarrolladas y diseñadas solo por mi. incluye funcionalidades como: busqueda por nombre, crear nuevas 
+      razas, filtros y ordenamiento, información detallada de cada raza, crear una cuenta, posibilidad de agregar razas a favoritos,
+      inicio de sesion y registro.`],
       rol:'Full Stack Developer',
       responsive:true,
       technologies:{
