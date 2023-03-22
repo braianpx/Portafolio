@@ -20,6 +20,63 @@ code {
     monospace;
 }
 
+#id_a_green{
+  color:green;
+  background-color: transparent;
+  border: 1.5px solid green;
+}
+#id_a_green:hover{
+  color: white;
+  background-color: green;
+}
+
+#id_a_cadetblue{
+  color: cadetblue;
+  background-color: transparent;
+  border: 1.5px solid cadetblue;
+}
+#id_a_cadetblue:hover{
+  color: white;
+  background-color: cadetblue;
+}
+
+#id_a_mediumturquoise{
+  color: mediumturquoise;
+  background-color: transparent;
+  border: 1.5px solid mediumturquoise;
+}
+#id_a_mediumturquoise:hover{
+  color: white;
+  background-color: mediumturquoise;
+}
+
+#id_a_black{
+  color: black;
+  border: 1.5px solid transparent;
+  background-color: black;
+}
+#id_a_black:hover{
+  color: white;
+  background-color: black;
+}
+
+#id_a_wheat{
+  color:wheat;
+  background-color: transparent;
+  border: 1.5px solid wheat;
+}
+#id_a_wheat:hover{
+  color:white;
+  background-color: wheat;
+}
+
+#id_a_disabled{
+  color: gray;
+  background-color: transparent;
+  border: 1.5px solid gray;
+  cursor: default;
+}
+
 .bgstyle {
   /* background: linear-gradient(136deg, #1ad7c0, #8E44AD, #ff9b11, #1F3A93, #ddd8c6, #000000, #000000);  */
   /*background: linear-gradient(

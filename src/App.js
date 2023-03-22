@@ -4,7 +4,7 @@ import {
   navBar,
   mainBody,
   about,
-  repos,
+  projects,
   leadership,
   skills,
   getInTouch,
@@ -34,6 +34,7 @@ const Home = React.forwardRef((props, ref) => {
         message={mainBody.message}
         icons={mainBody.icons}
         ref={ref}
+        resume={about.resume}
       />
       {about.show && (
         <AboutMe
@@ -49,12 +50,11 @@ const Home = React.forwardRef((props, ref) => {
           <Experience experiences={experiences}/>
         )
       }
-      {repos.show && (
+      {projects.show && (
         <Project
-          heading={repos.heading}
-          username={repos.gitHubUsername}
-          length={repos.reposLength}
-          specfic={repos.specificRepos}
+          heading={projects.heading}
+          username={projects.gitHubUsername}
+          projects={projects.projects}
         />
       )}
       {leadership.show && (

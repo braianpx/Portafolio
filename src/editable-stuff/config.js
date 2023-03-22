@@ -56,7 +56,7 @@ const about = {
     // soluciones y prácticas innovadoras. Asimismo, soy un colaborador comprometido y poseo habilidades sociales 
     // que me permiten trabajar en equipo de manera efectiva. Mi experiencia previa en proyectos grupales respalda 
     // mi capacidad para contribuir de manera significativa al éxito del proyecto.`,
-  resume: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
+  resume: require("../editable-stuff/resume.pdf"),
 };
 
 // PROJECTS SECTION
@@ -64,12 +64,117 @@ const about = {
 //      i.e: reposLength: 0,
 // If you want to display specfic projects, add the repository names,
 //      i.e ["repository-1", "repo-2"]
-const repos = {
+const projects = {
   show: true,
   heading: "Proyectos",
-  gitHubUsername: "braianpx", //i.e."johnDoe12Gh"
-  reposLength: 4,
-  specificRepos: [],
+  gitHubUsername: "braianpx",
+  projects:[
+    {
+      completed:true,
+      name:'Banco Saint Patrick',
+      description:[`Saint Patrick Bank es una plataforma financiera que ofrece a sus usuarios una 
+      wallet online de fácil acceso y uso, que permite al usuario agregar tarjetas externas y realizar 
+      transferencias a distintos bancos.`,
+      `Cuenta con una API REST y SPA, mi aporte se enfocó en el desarrollo de la API REST, que incluye 
+      funcionalidades como tokens, filtros y manejo de datos, transferencias, creación de tarjetas de débito 
+      del banco, opciones para agregar tarjetas externas, creación de billeteras virtuales únicas por usuario 
+      y registro de usuarios.`],
+      rol:'Back End Developer',
+      technologies:{
+        frontEnd:[null],
+        backEnd:['TypeScript','Nest','Express','PostgreSQL','TypeOrm','node.js']
+      },
+      image:null,
+      link:null,
+      repo:'https://github.com/Saint-Patrick-Patrick/Saint-Patrick-API',
+      color:'green'
+    },
+    {
+      completed:true,
+      name:'Psiconnect',
+      description:[
+      `Psiconnect es una plataforma en línea que ofrece servicios de asesoramiento y terapia 
+      psicológica, creada como proyecto final del programa de formación en desarrollo web Full Stack de 
+      SoyHenry. Su principal objetivo es brindar a los usuarios una experiencia de atención psicológica 
+      personalizada y accesible en cualquier momento y lugar.`,
+      `Cuenta con una API REST y SPA, mi aporte no se enfonco en el desarrollo de una en general sino en el desarrollo de ambas, 
+      incluye la implementación de diversas funcionalidades, tales como la búsqueda, filtrado y ordenamiento 
+      de información, inicio de sesión para administradores y usuarios, registro de usuarios, calendario, notificaciones 
+      por correo electrónico, pasarela de pagos, paneles de administrador y usuario, sistema de calificaciones y reseñas 
+      de usuarios, entre otras. Todo esto con el objetivo de proporcionar una experiencia de usuario fluida y eficiente.`],
+      // description:`Api Rest y SPA de una red social de psicólogos donde ofrecen sus servicios que incluye: Búsqueda, Filtrado, Ordenamiento, Inicio de sesión 
+      // admin/usuario, Registro de usuario, calendario, notificaciones por mail, pasarela de pagos, 
+      // paneles de admin/usuario, calificaciones de usuario, reseña de usuario y más.`,
+      rol:'Full Stack Developer',
+      technologies:{
+        frontEnd:['JavaScript','React','Redux-Toolkit','HTML','CSS'],
+        backEnd:['JavaScript','Node.js','Express','Sequelize','PostgreSQL','FireBase','Cloudinary']
+      },
+      image:require('../assets/img/projects/Psiconnect.png'),
+      link:'https://psiconnect.vercel.app',
+      repo:'https://github.com/orgs/Psiconnect/repositories',
+      color:'cadetblue'
+    },
+    {
+      completed:true,
+      name:'Terapeando',
+      description:[],
+      rol:'Back End Developer',
+      technologies:{
+        frontEnd:[null],
+        backEnd:['TypeScript','Express','MongoDB','Typegoose','Mongoose','Node.js']
+      },
+      image:require('../assets/img/projects/Terapeando.png'),
+      link:'https://terapeando.vercel.app',
+      repo:'https://github.com/DaniHellN25/Proyecto-Grupal',
+      color:'wheat'
+    },
+    {
+      completed:false,
+      name:'Tienda Samira',
+      description:[],
+      rol:'Full Stack Developer',
+      technologies:{
+        frontEnd:['JavaScript','React','Redux-Toolkit','HTML','CSS','Chakra UI'],
+        backEnd:['TypeScript','Express','Sequelize','PostgreSQL','Node.js']
+      },
+      image:null,
+      link:null,
+      repo:null,
+      color:'black'
+    },
+    {
+      completed:true,
+      name:'Dogs Pi',
+      description:[`Colaborar en Administrar, Planificar, Proponer nuevas ideas y desarrollar 
+      una app de psicólogos que incluye: Búsqueda, Filtrado, Ordenamiento, Inicio de sesión 
+      admin/usuario, Registro de usuario, calendario, notificaciones por mail, pasarela de pagos, 
+      paneles de admin/usuario, calificaciones de usuario, reseña de usuario y más.`],
+      rol:'Full Stack Developer',
+      technologies:{
+        frontEnd:['JavaScript','React','Redux','HTML','CSS'],
+        backEnd:['TypeScript','Node.js','Express','Sequelize','PostgreSQL']
+      },
+      image:require('../assets/img/projects/Dogs-PI.png'),
+      link:'https://dogs-pi-braianpx.vercel.app',
+      repo:'https://github.com/braianpx/Dogs-Pi',
+      color:'mediumturquoise'
+    },
+    {
+      completed:false,
+      name:'Weather App',
+      description:[],
+      rol:'Full Stack Developer',
+      technologies:{
+        frontEnd:['JavaScript','React','Redux','HTML','CSS'],
+        backEnd:['TypeScript','Express','MongoDB','Typegoose','Mongoose']
+      },
+      image:null,
+      link:null,
+      repo:null,
+      color:'black'
+    }
+  ]
 };
 
 // Leadership SECTION
@@ -101,33 +206,35 @@ const skills = {
   show: true,
   heading: "Habilidades",
   hardSkills: [
-    { name: "JavaScript", value: 90 },
-    { name: "TypeScript", value: 90 },
-    { name: "React", value: 75 },
-    { name: "Redux", value: 85 },
-    { name: "Express", value: 65 },
-    { name: "SQL", value: 90 },
-    { name: "NoSQL", value: 65 },
-    { name: "Node.js", value: 55 },
-    { name: "PostGreSQL", value: 80 },
-    { name: "MongoDB", value: 80 },
-    { name: "Typegoose", value: 80 },
-    { name: "Mongoose", value: 80 },
-    { name: "Sequelize", value: 80 },
-    { name: "Scrum", value: 80 },
-    { name: "Trello", value: 80 },
-    { name: "Git", value: 80 },
+    { name: "JavaScript", img: require('../assets/img/logos/JavaScript-logo.png') },
+    { name: "TypeScript", img: require('../assets/img/logos/Typescript-logo.png') },
+    { name: "React", img: require('../assets/img/logos/react-logo.png') },
+    { name: "Redux", img: require('../assets/img/logos/redux-logo.png') },
+    { name: "Express", img: require('../assets/img/logos/express-logo.png') },
+    { name: "SQL", img: require('../assets/img/logos/sql-logo.png') },
+    { name: "NoSQL", img: require('../assets/img/logos/nosql-logo.jpg') },
+    { name: "Node.js", img: require('../assets/img/logos/node-logo.jpg') },
+    { name: "PostGreSQL", img: require('../assets/img/logos/postgresql-logo.png') },
+    { name: "MongoDB", img: require('../assets/img/logos/mongodb-logo.png') },
+    { name: "Typegoose", img: require('../assets/img/logos/typegoose-logo.webp') },
+    { name: "Mongoose", img: require('../assets/img/logos/mongoose-logo.png') },
+    { name: "Sequelize", img: require('../assets/img/logos/sequelize-logo.png') },
+    { name: "WebSockets", img: require('../assets/img/logos/websocket-logo.png') },
+    { name: "Scrum", img: require('../assets/img/logos/scrum-logo.png') },
+    { name: "Trello", img: require('../assets/img/logos/trello-logo.png') },
+    { name: "Git", img:  require('../assets/img/logos/git-logo.png') },
+    { name:'NestJS', img: require('../assets/img/logos/nestjs-logo.png')},
   ],
   softSkills: [
-    { name: "Trabajo En Equipo", value: 80 },
-    { name: "Resolutivo", value: 90 },
-    { name: "Empatía", value: 75 },
-    { name: "Creativo", value: 85 },
-    { name: "Curioso", value: 75 },
-    { name: "Adaptable", value: 90 },
-    { name: "Comunicativo", value: 70 },
-    { name: "Solidario", value: 90 },
-    { name: "Mente Abierta", value: 90 }
+    { name: "Trabajo En Equipo", img: false },
+    { name: "Resolutivo", img: false },
+    { name: "Empatía", img: false },
+    { name: "Creativo", img: false },
+    { name: "Curioso", img: false },
+    { name: "Adaptable", img: false },
+    { name: "Comunicativo", img: false },
+    { name: "Solidario", img: false },
+    { name: "Mente Abierta", img: false }
   ],
 };
 
@@ -180,4 +287,4 @@ const experiences = {
 //   show: false,
 // };
 
-export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences, contact };
+export { navBar, mainBody, about, projects, skills, leadership, getInTouch, experiences, contact };
