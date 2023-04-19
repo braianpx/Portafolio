@@ -39,7 +39,7 @@ const mainBody = {
 const about = {
   show: true,
   heading: "Sobre Mi",
-  imageLink: require("../editable-stuff/braianvaldez.jpg"),
+  imageLink: require("../editable-stuff/braianvaldez.jpg") || null,
   imageSize: 375,
   message:
     `Mi nombre es Braian, Full Stack Developer graduado de Henry Bootcamp 2023, vivo en la provincia de Tucumán, 
