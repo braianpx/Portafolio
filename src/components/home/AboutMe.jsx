@@ -9,7 +9,7 @@ const pictureLinkRegex = new RegExp(
 
 const AboutMe = ({ heading, message, link, imgSize, resume }) => {
   const [profilePicUrl, setProfilePicUrl] = React.useState("");
-  const [showPic, setShowPic] = React.useState(Boolean(false)); // en el false va el link
+  const [showPic, setShowPic] = React.useState(Boolean(link));
   // https://stackoverflow.com/questions/55840294/how-to-fix-missing-dependency-warning-when-using-useeffect-react-hook
   React.useEffect(() => {
     const handleRequest = async () => {
