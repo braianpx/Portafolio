@@ -275,27 +275,27 @@ const contact = {
 // GET IN TOUCH SECTION
 const getInTouch = {
   show: false,
-  heading: "Get In Touch",
-  message:
-    "I'm currently looking for full-time Software Engineering or Machine Learning opportunities! If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at",
-  email: "hashirshoaeb@gmail.com",
+//   heading: "Get In Touch",
+//   message:
+//     "I'm currently looking for full-time Software Engineering or Machine Learning opportunities! If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at",
+//   email: "hashirshoaeb@gmail.com",
 };
 
 const experiences = {
   show: false,
-  heading: "Experiences",
-  data: [
-    {
-      role: 'Software Engineer',// Here Add Company Name
-      companylogo: require('../assets/img/dell.png'),
-      date: 'June 2018 – Present',
-    },
-    {
-      role: 'Front-End Developer',
-      companylogo: require('../assets/img/boeing.png'),
-      date: 'May 2017 – May 2018',
-    },
-  ]
+//   heading: "Experiences",
+//   data: [
+//     {
+//       role: 'Software Engineer',// Here Add Company Name
+//       companylogo: require('../assets/img/dell.png'),
+//       date: 'June 2018 – Present',
+//     },
+//     {
+//       role: 'Front-End Developer',
+//       companylogo: require('../assets/img/boeing.png'),
+//       date: 'May 2017 – May 2018',
+//     },
+//   ]
 }
 
 // Blog SECTION
