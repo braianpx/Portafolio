@@ -4,12 +4,18 @@ const navBar = {
 };
 
 // Main Body SECTION
+// Main Body SECTION
 const mainBody = {
-  gradientColors: "black, black, black, #ecf0f1, black, black, black",
+  gradientColors: "black, black, black, black, black, black, black",
+
   firstName: "Braian",
   middleName: "Oscar",
   lastName: "Valdez",
-  message: "Full Stack Web Developer",
+
+  role: "Full Stack & Software Developer | QA Tester",
+  specialization: "Especializado en React, NestJS y PostgreSQL",
+  tagline: "Diseño y desarrollo aplicaciones web con foco en performance y mantenibilidad",
+
   icons: [
     {
       image: "fa-github",
@@ -21,6 +27,7 @@ const mainBody = {
     },
   ],
 };
+
 
 // ABOUT SECTION
 // If you want the About Section to show a profile picture you can fill the profilePictureLink either with:
