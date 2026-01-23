@@ -1,9 +1,31 @@
+import HifenixImg from "../assets/img/logos/hifenix_logo.jpg";
+import PersonImg from "../assets/img/logos/person.png";
+// IMAGENES DE PROYECTOS
+// HI SURVEY
+import HiSurveyImg1 from "../assets/img/projects/HiSurvey/1.png";
+import HiSurveyImg2 from "../assets/img/projects/HiSurvey/2.png";
+import HiSurveyImg3 from "../assets/img/projects/HiSurvey/3.png";
+import HiSurveyImg4 from "../assets/img/projects/HiSurvey/4.png";
+import HiSurveyImg5 from "../assets/img/projects/HiSurvey/5.png";
+import HiSurveyImg6 from "../assets/img/projects/HiSurvey/6.png";
+import HiSurveyImg7 from "../assets/img/projects/HiSurvey/7.png";
+import HiSurveyImg8 from "../assets/img/projects/HiSurvey/8.png";
+import HiSurveyImg9 from "../assets/img/projects/HiSurvey/9.png";
+import HiSurveyImg10 from "../assets/img/projects/HiSurvey/10.png";
+// HI ASSITANT
+import HiChatAssistantImg1 from "../assets/img/projects/HiChatAssistant/1.png";
+import HiChatAssistantImg2 from "../assets/img/projects/HiChatAssistant/2.png";
+import HiChatAssistantImg3 from "../assets/img/projects/HiChatAssistant/3.png";
+import HiChatAssistantImg4 from "../assets/img/projects/HiChatAssistant/4.png";
+import HiChatAssistantImg5 from "../assets/img/projects/HiChatAssistant/5.png";
+import HiChatAssistantImg6 from "../assets/img/projects/HiChatAssistant/6.png";
+import HiChatAssistantImg7 from "../assets/img/projects/HiChatAssistant/7.png";
+
 // Navigation Bar SECTION
 const navBar = {
   show: true,
 };
 
-// Main Body SECTION
 // Main Body SECTION
 const mainBody = {
   gradientColors: "black, black, black, black, black, black, black",
@@ -27,7 +49,6 @@ const mainBody = {
     },
   ],
 };
-
 
 // ABOUT SECTION
 // If you want the About Section to show a profile picture you can fill the profilePictureLink either with:
@@ -288,22 +309,144 @@ const getInTouch = {
 //   email: "hashirshoaeb@gmail.com",
 };
 
+// editable-stuff/experiences.js
+
 const experiences = {
-  show: false,
-//   heading: "Experiences",
-//   data: [
-//     {
-//       role: 'Software Engineer',// Here Add Company Name
-//       companylogo: require('../assets/img/dell.png'),
-//       date: 'June 2018 – Present',
-//     },
-//     {
-//       role: 'Front-End Developer',
-//       companylogo: require('../assets/img/boeing.png'),
-//       date: 'May 2017 – May 2018',
-//     },
-//   ]
-}
+  show: true,
+  heading: "Experiencia Profesional",
+  data: [
+    {
+      id: "hi-fenix",
+      company: "Hi Fenix",
+      linkedin: "https://www.linkedin.com/company/hifenix",
+      web: "https://hifenix.com.ar/",
+      image: HifenixImg,
+      role: "Full Stack Developer | Software Developer | QA Tester",
+      period: "Nov 2024 – Ene 2026",
+      description:
+        "Empresa enfocada en el desarrollo de servicios y consultoría tecnológica, con fuerte especialización en automatización conversacional con inteligencia artificial. Su producto principal, Hi Chat Assistant, permite a las empresas automatizar atención y ventas 24/7 en múltiples canales digitales.",
+      projects: [
+        {
+          id: "hichat-assistant",
+          name: "Hi Chat Assistant",
+          description:
+            "Microservicio de automatización de atención al cliente y ventas mediante inteligencia artificial, integrado en WhatsApp, Instagram, Facebook y web.",
+          highlights: [
+            "Diseñar un chat e implementación de mensajeria funcional",
+            "Automatización estimada al 100% de la atención al cliente",
+            "Diseñar un sistema que fomenta la conversación con los usuarios, incrementando las interacciones en un 60%",
+            "Diseño de componentes escalables y reutilizables con Lit",
+            "Comunicación en tiempo real mediante WebSockets y Socket.io",
+            "Desarrollo de funcionalidades que permiten manejar estados locales y configurar opciones para personalizar y automatizar la experiencia del cliente",
+            "Empaquetado y distribución del chatbot como paquete NPM",
+            "Pruebas de rendimiento, estabilidad y validación funcional",
+          ],
+          techStack: [
+            "JavaScript",
+            "Lit",
+            "Rollup",
+            "HTML",
+            "CSS",
+            "WebSockets",
+            "Socket.io",
+            "React",
+            "Tailwind",
+          ],
+          images: [ HiChatAssistantImg1, HiChatAssistantImg2,HiChatAssistantImg3, HiChatAssistantImg7, HiChatAssistantImg4, HiChatAssistantImg5, HiChatAssistantImg6 ], // <-- agregado
+        },
+
+        {
+          id: "backoffice",
+          name: "BackOffice",
+          description:
+            "Aplicación web y API interna para la gestión operativa y administrativa del ecosistema Hi Chat.",
+          highlights: [
+            "Implementación de vistas avanzadas con filtros y búsquedas eficientes",
+            "Integración con APIs internas utilizando NestJS",
+            "Refactorización de componentes y mejora de mantenibilidad",
+            "Implementación de la funcionalidad para importar productos desde un archivo Excel",
+            "Documentación técnica y testing funcional",
+            "Gestión de endpoints e integración mediante hooks",
+          ],
+          techStack: [
+            "JavaScript",
+            "TypeScript",
+            "React",
+            "Tailwind",
+            "Vite.js",
+            "NestJS",
+            "PostgreSQL",
+            "JWT",
+          ],
+          images: [], // <-- agregado
+        },
+
+        {
+          id: "admin-panel",
+          name: "Panel Admin HiChat",
+          description:
+            "Frontend administrativo para la gestión de clientes, productos y configuraciones del sistema.",
+          highlights: [
+            "Interfaz organizada por columnas para manejo eficiente de datos",
+            "Flujos protegidos mediante JWT y validación de sesión",
+            "Integración y gestión de suscripciones y planes de servicio",
+            "Implementación de métricas, cálculos de negocio y visualización de estadísticas mediante gráficas",
+            "Integración de un panel de gestión y manejo de usuarios y empresas",
+            "Optimización de UX y mejoras visuales continuas",
+          ],
+          techStack: [
+            "JavaScript",
+            "React",
+            "Vite.js",
+            "Tailwind",
+            "HTML",
+            "CSS",
+          ],
+          images: [], // <-- agregado
+        },
+      ],
+    },
+
+    {
+      id: "freelance",
+      company: "Freelance",
+      linkedin: "",
+      web: "",
+      image: PersonImg,
+      role: "Independent Full Stack Developer",
+      period: "Jun 2025 – Ago 2025",
+      description:
+        "Desarrollo independiente de aplicaciones, software y sistemas avanzados desde cero, enfocadas en soluciones escalables, optimizables y mantenibles, implementando arquitectura avanzada, patrones de diseño y buenas prácticas de ingeniería de software.",
+      projects: [
+        {
+          id: "hi-survey",
+          name: "Hi Survey",
+          description:
+            "Plataforma privada de encuestas en tiempo real con panel administrativo avanzado y visualización geográfica.",
+          highlights: [
+            "Sistema de encuestas en tiempo real con comunicación instantánea",
+            "Implementar panel administrativo con gestión de roles y reportes dinámicos",
+            "Visualización de zonas y datos mediante Leaflet y GeoJSON",
+            "Diseño e implementación de base de datos relacional",
+            "Desarrollo de funcionalidad para analizar resultados de encuestas y generar reportes PDF de forma dinámica",
+            "implementar funcionalidad que permita monitorear en tiempo real la ubicación de los encuestadores",
+          ],
+          techStack: [
+            "TypeScript",
+            "React",
+            "Vite.js",
+            "PostgreSQL",
+            "WebSockets",
+            "Leaflet",
+            "GeoJSON",
+          ],
+          images: [HiSurveyImg1, HiSurveyImg2, HiSurveyImg3, HiSurveyImg4, HiSurveyImg5, HiSurveyImg6, HiSurveyImg7, HiSurveyImg8, HiSurveyImg9, HiSurveyImg10 ], // <-- agregado
+        },
+      ],
+    },
+  ],
+};
+
 
 // Blog SECTION
 // const blog = {
