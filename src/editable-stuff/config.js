@@ -1,5 +1,25 @@
-import HifenixImg from "../assets/img/logos/hifenix_logo.jpg"
-import PersonImg from "../assets/img/logos/person.png"
+import HifenixImg from "../assets/img/logos/hifenix_logo.jpg";
+import PersonImg from "../assets/img/logos/person.png";
+// IMAGENES DE PROYECTOS
+// HI SURVEY
+import HiSurveyImg1 from "../assets/img/projects/HiSurvey/1.png";
+import HiSurveyImg2 from "../assets/img/projects/HiSurvey/2.png";
+import HiSurveyImg3 from "../assets/img/projects/HiSurvey/3.png";
+import HiSurveyImg4 from "../assets/img/projects/HiSurvey/4.png";
+import HiSurveyImg5 from "../assets/img/projects/HiSurvey/5.png";
+import HiSurveyImg6 from "../assets/img/projects/HiSurvey/6.png";
+import HiSurveyImg7 from "../assets/img/projects/HiSurvey/7.png";
+import HiSurveyImg8 from "../assets/img/projects/HiSurvey/8.png";
+import HiSurveyImg9 from "../assets/img/projects/HiSurvey/9.png";
+import HiSurveyImg10 from "../assets/img/projects/HiSurvey/10.png";
+// HI ASSITANT
+import HiChatAssistantImg1 from "../assets/img/projects/HiChatAssistant/1.png";
+import HiChatAssistantImg2 from "../assets/img/projects/HiChatAssistant/2.png";
+import HiChatAssistantImg3 from "../assets/img/projects/HiChatAssistant/3.png";
+import HiChatAssistantImg4 from "../assets/img/projects/HiChatAssistant/4.png";
+import HiChatAssistantImg5 from "../assets/img/projects/HiChatAssistant/5.png";
+import HiChatAssistantImg6 from "../assets/img/projects/HiChatAssistant/6.png";
+import HiChatAssistantImg7 from "../assets/img/projects/HiChatAssistant/7.png";
 
 // Navigation Bar SECTION
 const navBar = {
@@ -299,7 +319,7 @@ const experiences = {
       id: "hi-fenix",
       company: "Hi Fenix",
       linkedin: "https://www.linkedin.com/company/hifenix",
-      web:"https://hifenix.com.ar/",
+      web: "https://hifenix.com.ar/",
       image: HifenixImg,
       role: "Full Stack Developer | Software Developer | QA Tester",
       period: "Nov 2024 – Ene 2026",
@@ -332,6 +352,7 @@ const experiences = {
             "React",
             "Tailwind",
           ],
+          images: [ HiChatAssistantImg1, HiChatAssistantImg2,HiChatAssistantImg3, HiChatAssistantImg7, HiChatAssistantImg4, HiChatAssistantImg5, HiChatAssistantImg6 ], // <-- agregado
         },
 
         {
@@ -345,7 +366,7 @@ const experiences = {
             "Refactorización de componentes y mejora de mantenibilidad",
             "Implementación de la funcionalidad para importar productos desde un archivo Excel",
             "Documentación técnica y testing funcional",
-            "Gestión de endpoints e integración mediante hooks"
+            "Gestión de endpoints e integración mediante hooks",
           ],
           techStack: [
             "JavaScript",
@@ -357,6 +378,7 @@ const experiences = {
             "PostgreSQL",
             "JWT",
           ],
+          images: [], // <-- agregado
         },
 
         {
@@ -380,6 +402,7 @@ const experiences = {
             "HTML",
             "CSS",
           ],
+          images: [], // <-- agregado
         },
       ],
     },
@@ -388,12 +411,12 @@ const experiences = {
       id: "freelance",
       company: "Freelance",
       linkedin: "",
-      web:"",
+      web: "",
       image: PersonImg,
       role: "Independent Full Stack Developer",
       period: "Jun 2025 – Ago 2025",
       description:
-      "Desarrollo independiente de aplicaciones, software y sistemas avanzados desde cero, enfocadas en soluciones escalables, optimizables y mantenibles, implementando arquitectura avanzada, patrones de diseño y buenas prácticas de ingeniería de software.",
+        "Desarrollo independiente de aplicaciones, software y sistemas avanzados desde cero, enfocadas en soluciones escalables, optimizables y mantenibles, implementando arquitectura avanzada, patrones de diseño y buenas prácticas de ingeniería de software.",
       projects: [
         {
           id: "hi-survey",
@@ -406,7 +429,7 @@ const experiences = {
             "Visualización de zonas y datos mediante Leaflet y GeoJSON",
             "Diseño e implementación de base de datos relacional",
             "Desarrollo de funcionalidad para analizar resultados de encuestas y generar reportes PDF de forma dinámica",
-            "implementar funcionalidad que permita monitorear en tiempo real la ubicación de los encuestadores"
+            "implementar funcionalidad que permita monitorear en tiempo real la ubicación de los encuestadores",
           ],
           techStack: [
             "TypeScript",
@@ -417,11 +440,13 @@ const experiences = {
             "Leaflet",
             "GeoJSON",
           ],
+          images: [HiSurveyImg1, HiSurveyImg2, HiSurveyImg3, HiSurveyImg4, HiSurveyImg5, HiSurveyImg6, HiSurveyImg7, HiSurveyImg8, HiSurveyImg9, HiSurveyImg10 ], // <-- agregado
         },
       ],
     },
   ],
 };
+
 
 // Blog SECTION
 // const blog = {
