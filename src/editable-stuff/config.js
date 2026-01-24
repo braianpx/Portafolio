@@ -20,7 +20,8 @@ import HiChatAssistantImg4 from "../assets/img/projects/HiChatAssistant/4.png";
 import HiChatAssistantImg5 from "../assets/img/projects/HiChatAssistant/5.png";
 import HiChatAssistantImg6 from "../assets/img/projects/HiChatAssistant/6.png";
 import HiChatAssistantImg7 from "../assets/img/projects/HiChatAssistant/7.png";
-
+//Saint Patrick
+import SaintPatrickLogo from "../assets/img/projects/SP.png";
 // Navigation Bar SECTION
 const navBar = {
   show: true,
@@ -123,7 +124,7 @@ const projects = {
         frontEnd: [],
         backEnd: ["TypeScript", "NestJS", "Node.js", "PostgreSQL","JWT"]
       },
-      image: null,
+      image: SaintPatrickLogo,
       images: [],
       link: null,
       repo: "https://github.com/Saint-Patrick-Patrick/Saint-Patrick-API",
