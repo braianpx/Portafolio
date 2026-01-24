@@ -96,130 +96,109 @@ const projects = {
   show: true,
   heading: "Proyectos",
   gitHubUsername: "braianpx",
-  projects:[
+  projects: [
     {
-      completed:true,
-      name:'Banco Saint Patrick',
-      description:[`Saint Patrick Bank es una plataforma financiera que ofrece a sus usuarios una 
-      wallet online de fácil acceso y uso, que permite al usuario agregar tarjetas externas y realizar 
-      transferencias a distintos bancos.`,
-      `Cuenta con una API REST y SPA, mi aporte se enfocó en el desarrollo de la API REST, que incluye 
-      funcionalidades como tokens, filtros y manejo de datos, transferencias, creación de tarjetas de débito 
-      del banco, opciones para agregar tarjetas externas, creación de billeteras virtuales únicas por usuario 
-      y registro de usuarios.`],
-      rol:'Back End Developer',
-      responsive:false,
-      technologies:{
-        frontEnd:[null],
-        backEnd:['TypeScript','Nest','Express','PostgreSQL','TypeOrm','node.js']
-      },
-      image:null,
-      link:null,
-      repo:'https://github.com/Saint-Patrick-Patrick/Saint-Patrick-API',
-      color:'green'
-    },
-    {
-      completed:true,
-      name:'Psiconnect',
-      description:[
-      `Psiconnect es una plataforma en línea que ofrece servicios de asesoramiento y terapia 
-      psicológica, creada como proyecto final del programa de formación en desarrollo web Full Stack de 
-      SoyHenry. Su principal objetivo es brindar a los usuarios una experiencia de atención psicológica 
-      personalizada y accesible en cualquier momento y lugar.`,
-      `Cuenta con una API REST y SPA, mi aporte no se enfonco en el desarrollo de una en general sino en el desarrollo de ambas, 
-      incluye la implementación de diversas funcionalidades, tales como la búsqueda, filtrado y ordenamiento 
-      de información, inicio de sesión para administradores y usuarios, registro de usuarios, calendario, notificaciones 
-      por correo electrónico, pasarela de pagos, paneles de administrador y usuario, sistema de calificaciones y reseñas 
-      de usuarios, entre otras. Todo esto con el objetivo de proporcionar una experiencia de usuario fluida y eficiente.`],
-      // description:`Api Rest y SPA de una red social de psicólogos donde ofrecen sus servicios que incluye: Búsqueda, Filtrado, Ordenamiento, Inicio de sesión 
-      // admin/usuario, Registro de usuario, calendario, notificaciones por mail, pasarela de pagos, 
-      // paneles de admin/usuario, calificaciones de usuario, reseña de usuario y más.`,
-      rol:'Full Stack Developer',
-      responsive:true,
-      technologies:{
-        frontEnd:['JavaScript','React','Redux-Toolkit','HTML','CSS'],
-        backEnd:['JavaScript','Node.js','Express','Sequelize','PostgreSQL','FireBase','Cloudinary']
-      },
-      image:require('../assets/img/projects/Psiconnect.png'),
-      link:'https://psiconnect.vercel.app',
-      repo:'https://github.com/orgs/Psiconnect/repositories',
-      color:'cadetblue'
-    },
-    {
-      completed:true,
-      name:'Terapeando',
-      description:[`Aplicacion web de terapia online que conecta a usuarios y psicólogos con el objetivo de facilitar el 
-      acceso a la salud mental.`,
-      `cuenta con una API REST y una SPA, mi aporte se enfoco en el desarrollo de la API REST.
-      incluye las siguientes funcionalidades:sistema de reservas, inicio de sesión con Google y simple login, integración 
-      con Stripe para pagos, correos de confirmación y recuperación de contraseña con Nodemailer, Google Maps API, un blog, 
-      filtros y ordenamiento, y más`
+      id: 1,
+      completed: true,
+      name: "Banco Saint Patrick",
+      shortDescription:
+        "Plataforma financiera con API REST y wallet virtual para gestión de transferencias y autenticación.",
+      description: [
+        "Saint Patrick Bank es una plataforma financiera diseñada para simular el funcionamiento de un banco digital.",
+        "Desarrollé la API REST enfocada en autenticación, manejo de wallets, transferencias y control de acceso mediante roles.",
+        "El proyecto permitió aplicar arquitectura modular, seguridad con tokens y persistencia en bases de datos relacionales."
       ],
-      rol:'Back End Developer',
-      responsive:true,
-      technologies:{
-        frontEnd:[null],
-        backEnd:['TypeScript','Express','MongoDB','Typegoose','Mongoose','Node.js']
+      rol: "Back End Developer",
+      modality: "individual",
+      scope: "backend",
+      responsive: false,
+      features: [
+        "Autenticación segura mediante JWT, asegurando acceso controlado y sesiones protegidas",
+        "Gestión completa de wallets virtuales, con seguimiento de saldos y transacciones",
+        "Transferencias entre cuentas con validaciones y registro de historial para mayor seguridad",
+        "Control de roles y permisos granular, garantizando acceso adecuado según perfil de usuario",
+        "Arquitectura modular en NestJS, facilitando escalabilidad, mantenimiento y desarrollo de nuevas funcionalidades"
+      ],
+      technologies: {
+        frontEnd: [],
+        backEnd: ["TypeScript", "NestJS", "Node.js", "PostgreSQL","JWT"]
       },
-      image:require('../assets/img/projects/Terapeando.png'),
-      link:'https://terapeando.vercel.app',
-      repo:'https://github.com/DaniHellN25/Proyecto-Grupal',
-      color:'wheat'
+      image: null,
+      images: [],
+      link: null,
+      repo: "https://github.com/Saint-Patrick-Patrick/Saint-Patrick-API",
+      color: "green"
     },
+
     {
-      completed:false,
-      name:'Tienda Samira',
-      description:[],
-      rol:'Full Stack Developer',
-      responsive:true,
-      technologies:{
-        frontEnd:['JavaScript','React','Redux-Toolkit','HTML','CSS','Chakra UI'],
-        backEnd:['TypeScript','Express','Sequelize','PostgreSQL','Node.js']
+      id: 2,
+      completed: true,
+      name: "Psiconnect",
+      shortDescription:
+        "Plataforma full stack de terapia online con pagos, calendario y sistema de usuarios.",
+      description: [
+        "Proyecto final grupal del bootcamp Henry enfocado en atención psicológica online.",
+        "Participé en el desarrollo tanto del frontend como del backend.",
+        "Incluye autenticación, pagos, notificaciones, paneles administrativos y sistema de reseñas."
+      ],
+      rol: "Full Stack Developer",
+      modality: "group",
+      scope: "fullstack",
+      responsive: true,
+      features: [
+        "Sistema de autenticación seguro con gestión de roles y control de acceso personalizado",
+        "Calendario de turnos interactivo con reserva, cancelación y notificaciones automáticas",
+        "Pagos integrados mediante pasarela confiable, con confirmación inmediata y manejo de transacciones",
+        "Panel de administración y panel de usuario con vistas adaptadas y gestión eficiente de datos",
+        "Sistema de calificaciones y valoraciones para servicios y usuarios, fomentando confianza y feedback",
+        "Sistema de mensajería vía email para notificaciones, recuperación de contraseña e información relevante"
+      ],
+      technologies: {
+        frontEnd: ["JavaScript", "React", "Redux", "HTML", "CSS", "Cloudinary", "firebase"],
+        backEnd: ["Node.js", "Express", "PostgreSQL", "Sequelize", "JWT", "Sockets"]
       },
-      image:null,
-      link:null,
-      repo:null,
-      color:'black'
+      image: require("../assets/img/projects/Psiconnect.png"),
+      images: [],
+      link: "https://psiconnect.vercel.app",
+      repo: "https://github.com/orgs/Psiconnect/repositories",
+      color: "cadetblue"
     },
+
     {
-      completed:true,
-      name:'Dogs Pi',
-      description:[`Dogs Pi es una aplicación web desarrollada como Proyecto Individual para Henry Bootcamp,
-      Su objetivo es compartir informacion sobre distintas razas de perros.`,`La aplicación cuenta con una API y una SPA,
-      ambas fueron desarrolladas y diseñadas solo por mi. incluye funcionalidades como: busqueda por nombre, crear nuevas 
-      razas, filtros y ordenamiento, información detallada de cada raza, crear una cuenta, posibilidad de agregar razas a favoritos,
-      inicio de sesion y registro.`],
-      rol:'Full Stack Developer',
-      responsive:true,
-      technologies:{
-        frontEnd:['JavaScript','React','Redux','HTML','CSS'],
-        backEnd:['JavaScript','Node.js','Express','Sequelize','PostgreSQL']
+      id: 3,
+      completed: true,
+      name: "Dogs PI",
+      shortDescription:
+        "Aplicación individual para consulta y gestión de razas de perros.",
+      description: [
+        "Proyecto individual desarrollado desde cero.",
+        "Incluye API y SPA con búsqueda, filtros, ordenamiento y creación de nuevas razas.",
+        "El objetivo fue consolidar conocimientos full stack."
+      ],
+      rol: "Full Stack Developer",
+      modality: "individual",
+      scope: "fullstack",
+      responsive: true,
+      features: [
+        "Diseño y desarrollo completo de la app desde cero",
+        "Búsqueda avanzada con múltiples criterios, autocompletado y resultados precisos para mejorar la experiencia del usuario",
+        "Filtros y ordenamiento dinámico que permiten organizar y visualizar la información de manera eficiente",
+        "Gestión completa de entidades: creación, edición y eliminación con validaciones en tiempo real",
+        "Sistema de favoritos para guardar elementos importantes y acceder a ellos de forma rápida y sencilla",
+      ],
+      technologies: {
+        frontEnd: ["JavaScript", "React", "Redux", "HTML", "CSS" ],
+        backEnd: ["Node.js", "Express", "PostgreSQL", "Sequelize" ]
       },
-      image:require('../assets/img/projects/Dogs-PI.png'),
-      link:'https://dogs-pi-braianpx.vercel.app',
-      repo:'https://github.com/braianpx/Dogs-Pi',
-      color:'mediumturquoise'
+      image: require("../assets/img/projects/Dogs-PI.png"),
+      images: [],
+      link: "https://dogs-pi-braianpx.vercel.app",
+      repo: "https://github.com/braianpx/Dogs-Pi",
+      color: "mediumturquoise"
     },
-    {
-      completed:true,
-      name:'Weather App',
-      description:[`Weather App es una aplicación web desarrollada de manera independiente que permite 
-      a los usuarios ver el clima actual en diferentes ciudades del mundo.`, 
-      `Incluye una API REST y una SPA y cuenta con funciones como registro de usuarios, capacidad de 
-      agregar ciudades a favoritos y visualización de información detallada o resumida del clima.`],
-      rol:'Full Stack Developer',
-      responsive:true,
-      technologies:{
-        frontEnd:['JavaScript','React','Redux','HTML','CSS','Bootstrap'],
-        backEnd:['TypeScript','Express','MongoDB','Typegoose','Mongoose']
-      },
-      image:require('../assets/img/projects/weather-app.png'),
-      link:null,
-      repo:'https://github.com/braianpx/Weather-App',
-      color:'black'
-    }
   ]
 };
+
 
 // Leadership SECTION
 const leadership = {
