@@ -113,11 +113,11 @@ const projects = {
       scope: "backend",
       responsive: false,
       features: [
-        "Autenticación con JWT",
-        "Gestión de wallets virtuales",
-        "Transferencias entre cuentas",
-        "Control de roles y permisos",
-        "Arquitectura modular en NestJS"
+        "Autenticación segura mediante JWT, asegurando acceso controlado y sesiones protegidas",
+        "Gestión completa de wallets virtuales, con seguimiento de saldos y transacciones",
+        "Transferencias entre cuentas con validaciones y registro de historial para mayor seguridad",
+        "Control de roles y permisos granular, garantizando acceso adecuado según perfil de usuario",
+        "Arquitectura modular en NestJS, facilitando escalabilidad, mantenimiento y desarrollo de nuevas funcionalidades"
       ],
       technologies: {
         frontEnd: [],
@@ -146,15 +146,16 @@ const projects = {
       scope: "fullstack",
       responsive: true,
       features: [
-        "Sistema de autenticación",
-        "Calendario de turnos",
-        "Pagos con pasarela integrada",
-        "Panel admin y panel usuario",
-        "Sistema de calificaciones"
+        "Sistema de autenticación seguro con gestión de roles y control de acceso personalizado",
+        "Calendario de turnos interactivo con reserva, cancelación y notificaciones automáticas",
+        "Pagos integrados mediante pasarela confiable, con confirmación inmediata y manejo de transacciones",
+        "Panel de administración y panel de usuario con vistas adaptadas y gestión eficiente de datos",
+        "Sistema de calificaciones y valoraciones para servicios y usuarios, fomentando confianza y feedback",
+        "Sistema de mensajería vía email para notificaciones, recuperación de contraseña e información relevante"
       ],
       technologies: {
-        frontEnd: ["JavaScript", "React", "Redux", "HTML", "CSS"],
-        backEnd: ["Node.js", "Express", "PostgreSQL", "Sequelize"]
+        frontEnd: ["JavaScript", "React", "Redux", "HTML", "CSS", "Cloudinary", "firebase"],
+        backEnd: ["Node.js", "Express", "PostgreSQL", "Sequelize", "JWT", "Sockets"]
       },
       image: require("../assets/img/projects/Psiconnect.png"),
       images: [],
@@ -172,22 +173,22 @@ const projects = {
       description: [
         "Proyecto individual desarrollado desde cero.",
         "Incluye API y SPA con búsqueda, filtros, ordenamiento y creación de nuevas razas.",
-        "El objetivo fue consolidar conocimientos full stack y buenas prácticas."
+        "El objetivo fue consolidar conocimientos full stack."
       ],
       rol: "Full Stack Developer",
       modality: "individual",
       scope: "fullstack",
       responsive: true,
       features: [
-        "Búsqueda avanzada",
-        "Filtros y ordenamiento",
-        "Creación de entidades",
-        "Favoritos",
-        "Autenticación básica"
+        "Diseño y desarrollo completo de la app desde cero",
+        "Búsqueda avanzada con múltiples criterios, autocompletado y resultados precisos para mejorar la experiencia del usuario",
+        "Filtros y ordenamiento dinámico que permiten organizar y visualizar la información de manera eficiente",
+        "Gestión completa de entidades: creación, edición y eliminación con validaciones en tiempo real",
+        "Sistema de favoritos para guardar elementos importantes y acceder a ellos de forma rápida y sencilla",
       ],
       technologies: {
-        frontEnd: ["JavaScript", "React", "Redux", "HTML", "CSS"],
-        backEnd: ["Node.js", "Express", "PostgreSQL", "Sequelize"]
+        frontEnd: ["JavaScript", "React", "Redux", "HTML", "CSS" ],
+        backEnd: ["Node.js", "Express", "PostgreSQL", "Sequelize" ]
       },
       image: require("../assets/img/projects/Dogs-PI.png"),
       images: [],
@@ -195,39 +196,6 @@ const projects = {
       repo: "https://github.com/braianpx/Dogs-Pi",
       color: "mediumturquoise"
     },
-
-    {
-      id: 4,
-      completed: false,
-      name: "Sistema de encuestas geolocalizadas",
-      shortDescription:
-        "Plataforma de encuestas con zonas, tracking en tiempo real y visualización en mapas.",
-      description: [
-        "Aplicación en desarrollo enfocada en encuestas de campo.",
-        "Permite asignar zonas geográficas, visualizar recorridos y monitorear encuestadores en tiempo real.",
-        "Integra mapas interactivos y WebSockets."
-      ],
-      rol: "Full Stack Developer",
-      modality: "individual",
-      scope: "fullstack",
-      responsive: true,
-      features: [
-        "Asignación de zonas",
-        "Tracking en tiempo real",
-        "Mapas interactivos",
-        "WebSockets",
-        "Gestión de encuestas"
-      ],
-      technologies: {
-        frontEnd: ["React", "Leaflet", "Tailwind"],
-        backEnd: ["Node.js", "Express", "PostgreSQL"]
-      },
-      image: null,
-      images: [],
-      link: null,
-      repo: null,
-      color: "black"
-    }
   ]
 };
 
