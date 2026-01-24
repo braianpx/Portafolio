@@ -121,7 +121,7 @@ const projects = {
       ],
       technologies: {
         frontEnd: [],
-        backEnd: ["TypeScript", "NestJS", "Node.js", "PostgreSQL"]
+        backEnd: ["TypeScript", "NestJS", "Node.js", "PostgreSQL","JWT"]
       },
       image: null,
       images: [],
