@@ -31,7 +31,7 @@ const Project = ({ heading, projects }) => {
   return (
     <Jumbotron fluid id="projects" className="bg-light m-0">
       <Container>
-        <h2 className="display-4 pb-3 text-center">{heading}</h2>
+        <h2 className="display-5 fw-bold text-center mb-5">{heading}</h2>
 
         <ProjectsFilters
           activeStack={activeStack}

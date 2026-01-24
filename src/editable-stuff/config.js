@@ -35,7 +35,7 @@ const mainBody = {
   lastName: "Valdez",
 
   role: "Full Stack & Software Developer | QA Tester",
-  specialization: "Especializado en React, NestJS y PostgreSQL",
+  specialization: "Especializado en React, Next.js, NestJS y PostgreSQL",
   tagline: "Diseño y desarrollo aplicaciones web con foco en performance y mantenibilidad",
 
   icons: [
@@ -109,7 +109,7 @@ const projects = {
         "El proyecto permitió aplicar arquitectura modular, seguridad con tokens y persistencia en bases de datos relacionales."
       ],
       rol: "Back End Developer",
-      modality: "individual",
+      modality: "group",
       scope: "backend",
       responsive: false,
       features: [
@@ -344,8 +344,9 @@ const experiences = {
             "Integración con APIs internas utilizando NestJS",
             "Refactorización de componentes y mejora de mantenibilidad",
             "Implementación de la funcionalidad para importar productos desde un archivo Excel",
+            "Implementación de paneles de administración para productos, información y configuración, con gestión centralizada de datos y estados",
             "Documentación técnica y testing funcional",
-            "Gestión de endpoints e integración mediante hooks",
+            "Gestión de endpoints e integración mediante hooks"
           ],
           techStack: [
             "JavaScript",
@@ -356,6 +357,11 @@ const experiences = {
             "NestJS",
             "PostgreSQL",
             "JWT",
+            "Redis",
+            "MongoDB",
+            "AWS",
+            "HTML",
+            "CSS"
           ],
           images: [], // <-- agregado
         },
@@ -418,6 +424,8 @@ const experiences = {
             "WebSockets",
             "Leaflet",
             "GeoJSON",
+            "HTML",
+            "CSS"
           ],
           images: [HiSurveyImg1, HiSurveyImg2, HiSurveyImg3, HiSurveyImg4, HiSurveyImg5, HiSurveyImg6, HiSurveyImg7, HiSurveyImg8, HiSurveyImg9, HiSurveyImg10 ], // <-- agregado
         },
