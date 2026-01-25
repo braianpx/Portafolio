@@ -15,7 +15,7 @@ import MainBody from "./components/home/MainBody";
 import AboutMe from "./components/home/AboutMe";
 import Project from "./components/home/Project";
 import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/home/NavBar";
 import Skills from "./components/home/Skills";
 // import { Blog } from "./components/blog/Blog";
 // import BlogPost from "./components/blog/BlogPost";
@@ -31,30 +31,31 @@ const Home = React.forwardRef((props, ref) => {
       <MainBody
         gradient={mainBody.gradientColors}
         title={`${mainBody.firstName} ${mainBody.middleName} ${mainBody.lastName}`}
-        message={mainBody.message}
+        role={mainBody.role}
+        specialization={mainBody.specialization}
+        tagline={mainBody.tagline}
         icons={mainBody.icons}
         ref={ref}
         resume={about.resume}
       />
+        {
+          experiences.show && (
+            <Experience experiences={experiences}/>
+          )
+        }
+      {projects.show && (
+        <Project
+          heading={projects.heading}
+          projects={projects.projects}
+        />
+      )}
       {about.show && (
         <AboutMe
           heading={about.heading}
           message={about.message}
-          link={about.imageLink}
+          imageLink={about.imageLink}
           imgSize={about.imageSize}
           resume={about.resume}
-        />
-      )}
-      {
-        experiences.show && (
-          <Experience experiences={experiences}/>
-        )
-      }
-      {projects.show && (
-        <Project
-          heading={projects.heading}
-          username={projects.gitHubUsername}
-          projects={projects.projects}
         />
       )}
       {leadership.show && (
