@@ -20,7 +20,8 @@ import HiChatAssistantImg4 from "../assets/img/projects/HiChatAssistant/4.png";
 import HiChatAssistantImg5 from "../assets/img/projects/HiChatAssistant/5.png";
 import HiChatAssistantImg6 from "../assets/img/projects/HiChatAssistant/6.png";
 import HiChatAssistantImg7 from "../assets/img/projects/HiChatAssistant/7.png";
-
+//Saint Patrick
+import SaintPatrickLogo from "../assets/img/projects/SP.png";
 // Navigation Bar SECTION
 const navBar = {
   show: true,
@@ -36,7 +37,7 @@ const mainBody = {
 
   role: "Full Stack & Software Developer | QA Tester",
   specialization: "Especializado en React, Next.js, NestJS y PostgreSQL",
-  tagline: "Diseño y desarrollo aplicaciones web con foco en performance y mantenibilidad",
+  tagline: "Diseño y desarrollo aplicaciones con foco en arquitectura, performance y mantenibilidad",
 
   icons: [
     {
@@ -66,26 +67,22 @@ const mainBody = {
 
 const about = {
   show: true,
-  heading: "Sobre Mi",
-  imageLink: false, //require("../editable-stuff/braianvaldez.jpg") ||
+  heading: "Sobre mí",
+  imageLink: require("./braianvaldez.jpg"),
   imageSize: 375,
-  message:
-    `Mi nombre es Braian, Full Stack Developer graduado de Henry Bootcamp 2023, vivo en la provincia de Tucumán, 
-    Argentina junto con mis 6 gatos y con los 14 perros de mi familia. Soy alguien apasionado por el codigo, 
-    Comprometido, responsable, sociable, creativo y con actitud positiva. Poseo amplios conocimientos y habilidades 
-    que pueden contribuir significativamente. Me destaco por mi capacidad creativa, lo que me 
-    permite generar nuevas ideas, soluciones y prácticas innovadoras. Asimismo, soy un colaborador comprometido y 
-    poseo habilidades sociales que me permiten trabajar en equipo de manera efectiva.`,
-    // `Mi nombre es Braian, Full Stack Developer graduado de Henry Bootcamp 2023, vivo en la provincia de Tucumán, 
-    // Argentina junto con mis 6 gatos y con los 14 perros de mi familia. Soy alguien apasionado por el codigo, 
-    // Comprometido, responsable, sociable, creativo y con actitud positiva.  Poseo amplios conocimientos y habilidades 
-    // que pueden contribuir significativamente a mejorar la producción, el desarrollo, la administración y el diseño. 
-    // Me destaco por mi capacidad creativa, lo que me permite generar nuevas ideas, 
-    // soluciones y prácticas innovadoras. Asimismo, soy un colaborador comprometido y poseo habilidades sociales 
-    // que me permiten trabajar en equipo de manera efectiva. Mi experiencia previa en proyectos grupales respalda 
-    // mi capacidad para contribuir de manera significativa al éxito del proyecto.`,
+  message: `
+Mi nombre es Braian y soy Full Stack & Software Developer. Me formé en Henry Bootcamp en 2023 y desde entonces trabajo en el desarrollo de software y aplicaciones de escritorio, mobile y web, participando tanto en frontend como en backend.
+
+Tengo experiencia construyendo aplicaciones completas y microservicios, con foco en una arquitectura clara, escalable y bien comunicada entre sus componentes. Trabajo principalmente con React y NestJS, utilizando JavaScript y TypeScript, junto a bases de datos como PostgreSQL y MongoDB.
+
+He participado en el desarrollo de APIs, sistemas de autenticación, paneles de administración, soluciones e-commerce y aplicaciones tipo SaaS, siempre orientadas a resolver necesidades reales.
+
+Me enfoco en escribir código entendible, mantenible y con buen rendimiento, pensando los proyectos como soluciones a largo plazo y no solo como entregables. Me considero una persona responsable y comprometida, disfruto el trabajo en equipo y participar en proyectos sólidos y de mayor escala donde pueda aportar valor y seguir creciendo profesionalmente.
+`,
   resume: require("../editable-stuff/resume.pdf"),
 };
+
+
 
 // PROJECTS SECTION
 // Setting up project lenght will automatically fetch your that number of recently updated projects, or you can set this field 0 to show none.
@@ -123,7 +120,7 @@ const projects = {
         frontEnd: [],
         backEnd: ["TypeScript", "NestJS", "Node.js", "PostgreSQL","JWT"]
       },
-      image: null,
+      image: SaintPatrickLogo,
       images: [],
       link: null,
       repo: "https://github.com/Saint-Patrick-Patrick/Saint-Patrick-API",
