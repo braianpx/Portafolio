@@ -17,8 +17,7 @@ const ProjectDetailModal = ({ show, onHide, project }) => {
     image,
     link,
     repo,
-    completed,
-    color
+    completed
   } = project;
 
   return (

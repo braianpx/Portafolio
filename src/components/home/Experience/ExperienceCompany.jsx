@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Card, Button, Collapse, Badge } from "react-bootstrap";
+import { Card, Button, Collapse } from "react-bootstrap";
 import ExperienceProject from "./ExperienceProject";
 
 const ExperienceCompany = ({ company }) => {

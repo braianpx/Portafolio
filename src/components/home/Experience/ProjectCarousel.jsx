@@ -44,7 +44,7 @@ const ProjectCarousel = ({ images }) => {
 
         <img
           src={mainImage}
-          alt={`Project image ${currentIndex + 1}`}
+          alt={`Project ${currentIndex + 1}`}
           style={{
             width: "65%",
             maxHeight: "400px",
