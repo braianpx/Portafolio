@@ -110,11 +110,11 @@ const projects = {
       scope: "backend",
       responsive: false,
       features: [
-        "Autenticación segura mediante JWT, asegurando acceso controlado y sesiones protegidas",
-        "Gestión completa de wallets virtuales, con seguimiento de saldos y transacciones",
-        "Transferencias entre cuentas con validaciones y registro de historial para mayor seguridad",
-        "Control de roles y permisos granular, garantizando acceso adecuado según perfil de usuario",
-        "Arquitectura modular en NestJS, facilitando escalabilidad, mantenimiento y desarrollo de nuevas funcionalidades"
+        "Implementar el login y registro con JWT para manejar sesiones seguras en el backend.",
+        "Desarrollar la lógica de las billeteras virtuales para el control de saldos y depósitos.",
+        "Programar el flujo de transferencias con validaciones de saldo y registro de movimientos.",
+        "Diseñar un sistema de permisos por roles para separar las acciones de clientes y administradores.",
+        "Estructurar la API en módulos con NestJS para que el código sea limpio y fácil de escalar."
       ],
       technologies: {
         frontEnd: [],
@@ -143,12 +143,12 @@ const projects = {
       scope: "fullstack",
       responsive: true,
       features: [
-        "Sistema de autenticación seguro con gestión de roles y control de acceso personalizado",
-        "Calendario de turnos interactivo con reserva, cancelación y notificaciones automáticas",
-        "Pagos integrados mediante pasarela confiable, con confirmación inmediata y manejo de transacciones",
-        "Panel de administración y panel de usuario con vistas adaptadas y gestión eficiente de datos",
-        "Sistema de calificaciones y valoraciones para servicios y usuarios, fomentando confianza y feedback",
-        "Sistema de mensajería vía email para notificaciones, recuperación de contraseña e información relevante"
+        "Diseñar los perfiles de usuario con vistas y permisos específicos para psicólogos y pacientes.",
+        "Implementar un calendario de turnos que permite reservar y cancelar citas en tiempo real.",
+        "Integrar la pasarela de pagos para que los pacientes abonen sus sesiones desde la web.",
+        "Desarrollar los paneles de control para gestionar la base de datos y moderar el contenido.",
+        "Programar el sistema de reseñas para que los usuarios puedan calificar el servicio recibido.",
+        "Configurar el envío de correos automáticos para confirmar turnos y recuperar contraseñas."
       ],
       technologies: {
         frontEnd: ["JavaScript", "React", "Redux", "HTML", "CSS", "Cloudinary", "firebase"],
@@ -169,7 +169,7 @@ const projects = {
         "Aplicación individual para consulta y gestión de razas de perros.",
       description: [
         "Proyecto individual desarrollado desde cero.",
-        "Incluye API y SPA con búsqueda, filtros, ordenamiento y creación de nuevas razas.",
+        "Incluye API y SPA con búsqueda, filtros, ordenamiento y creación de datos.",
         "El objetivo fue consolidar conocimientos full stack."
       ],
       rol: "Full Stack Developer",
@@ -177,11 +177,11 @@ const projects = {
       scope: "fullstack",
       responsive: true,
       features: [
-        "Diseño y desarrollo completo de la app desde cero",
-        "Búsqueda avanzada con múltiples criterios, autocompletado y resultados precisos para mejorar la experiencia del usuario",
-        "Filtros y ordenamiento dinámico que permiten organizar y visualizar la información de manera eficiente",
-        "Gestión completa de entidades: creación, edición y eliminación con validaciones en tiempo real",
-        "Sistema de favoritos para guardar elementos importantes y acceder a ellos de forma rápida y sencilla",
+        "Desarrollar un buscador que muestra resultados al instante mientras el usuario escribe.",
+        "Implementar filtros combinados para organizar los perros por temperamento, peso y origen.",
+        "Diseñar el formulario de creación con validaciones para evitar errores al cargar nuevas razas.",
+        "Programar la lógica de ordenamiento alfabético y por peso de los resultados.",
+        "Crear una sección de favoritos para guardar y consultar razas específicas rápidamente."
       ],
       technologies: {
         frontEnd: ["JavaScript", "React", "Redux", "HTML", "CSS" ],
@@ -225,38 +225,95 @@ const leadership = {
 const skills = {
   show: true,
   heading: "Habilidades",
+
+  technologies: [
+    {
+      category: "Frontend",
+      items: [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Redux",
+        "Redux Toolkit",
+        "React Native",
+        "HTML5",
+        "CSS3",
+        "Sass",
+        "Tailwind CSS",
+        "Bootstrap",
+        "Vite",
+        "Lit",
+        "Leaflet",
+        "GeoJSON"
+      ]
+    },
+  {
+    category: "Backend",
+    items: [
+      "Node.js",
+      "NestJS",
+      "Express",
+      "REST APIs",
+      "WebSockets",
+      "Socket.IO",
+      "Swagger"
+    ]
+  },
+    {
+      category: "Bases de Datos",
+      items: [
+        "PostgreSQL",
+        "MongoDB",
+        "SQL",
+        "NoSQL",
+      ]
+    },
+    {
+      category: "ORMs",
+      items: [
+        "Sequelize",
+        "TypeORM",
+        "Mongoose",
+        "Typegoose"
+      ]
+    },
+    {
+      category: "Herramientas y Metodologías",
+      items: [
+        "Git",
+        "Scrum",
+        "Trello",
+        "Postman",
+        "Taiga",
+        "Jest"
+      ]
+    }
+  ],
+
   hardSkills: [
-    { name: "JavaScript", img: require('../assets/img/logos/JavaScript-logo.png') },
-    { name: "TypeScript", img: require('../assets/img/logos/Typescript-logo.png') },
-    { name: "React", img: require('../assets/img/logos/react-logo.png') },
-    { name: "Redux", img: require('../assets/img/logos/redux-logo.png') },
-    { name: "Express", img: require('../assets/img/logos/express-logo.png') },
-    { name: "SQL", img: require('../assets/img/logos/sql-logo.png') },
-    { name: "NoSQL", img: require('../assets/img/logos/nosql-logo.jpg') },
-    { name: "Node.js", img: require('../assets/img/logos/node-logo.jpg') },
-    { name: "PostGreSQL", img: require('../assets/img/logos/postgresql-logo.png') },
-    { name: "MongoDB", img: require('../assets/img/logos/mongodb-logo.png') },
-    { name: "Typegoose", img: require('../assets/img/logos/typegoose-logo.webp') },
-    { name: "Mongoose", img: require('../assets/img/logos/mongoose-logo.png') },
-    { name: "Sequelize", img: require('../assets/img/logos/sequelize-logo.png') },
-    { name: "WebSockets", img: require('../assets/img/logos/websocket-logo.png') },
-    { name: "Scrum", img: require('../assets/img/logos/scrum-logo.png') },
-    { name: "Trello", img: require('../assets/img/logos/trello-logo.png') },
-    { name: "Git", img:  require('../assets/img/logos/git-logo.png') },
-    { name:'NestJS', img: require('../assets/img/logos/nestjs-logo.png')},
+    "Desarrollo de aplicaciones full stack orientadas a escalabilidad y mantenibilidad",
+    "Diseño e implementación de APIs REST robustas, pensadas para distintos tipos de clientes",
+    "Definición y organización de arquitecturas backend modulares con NestJS",
+    "Diseño de soluciones basadas en microservicios según requerimientos técnicos y de negocio",
+    "Implementación de mecanismos de autenticación y autorización utilizando JWT y sesiones",
+    "Modelado y gestión de bases de datos relacionales y no relacionales, priorizando consistencia y performance",
+    "Optimización de rendimiento y experiencia de usuario en aplicaciones frontend complejas",
+    "Implementación de comunicación en tiempo real para casos de uso críticos mediante WebSockets",
+    "Diseño de arquitectura, diagramas y flujos como parte del proceso de toma de decisiones técnicas",
+    "Aplicación de patrones de diseño en frontend y backend para resolver problemas recurrentes"
   ],
-  softSkills: [
-    { name: "Trabajo En Equipo", img: false },
-    { name: "Resolutivo", img: false },
-    { name: "Empatía", img: false },
-    { name: "Creativo", img: false },
-    { name: "Curioso", img: false },
-    { name: "Adaptable", img: false },
-    { name: "Comunicativo", img: false },
-    { name: "Solidario", img: false },
-    { name: "Mente Abierta", img: false }
-  ],
+
+softSkills: [
+  "Trabajo colaborativo en equipos multidisciplinarios",
+  "Comunicación clara y efectiva en contextos técnicos y de negocio",
+  "Capacidad para analizar problemas complejos y proponer soluciones prácticas",
+  "Adaptabilidad frente a cambios de requerimientos y contextos técnicos",
+  "Pensamiento analítico aplicado a la toma de decisiones técnicas",
+  "Autonomía para organizar tareas y cumplir objetivos",
+  "Responsabilidad y compromiso con la calidad del trabajo entregado"
+]
 };
+
 
 //CONTACTS
 
@@ -308,14 +365,13 @@ const experiences = {
           description:
             "Microservicio de automatización de atención al cliente y ventas mediante inteligencia artificial, integrado en WhatsApp, Instagram, Facebook y web.",
           highlights: [
-            "Diseñar un chat e implementación de mensajeria funcional",
-            "Automatización estimada al 100% de la atención al cliente",
-            "Diseñar un sistema que fomenta la conversación con los usuarios, incrementando las interacciones en un 60%",
-            "Diseño de componentes escalables y reutilizables con Lit",
-            "Comunicación en tiempo real mediante WebSockets y Socket.io",
-            "Desarrollo de funcionalidades que permiten manejar estados locales y configurar opciones para personalizar y automatizar la experiencia del cliente",
-            "Empaquetado y distribución del chatbot como paquete NPM",
-            "Pruebas de rendimiento, estabilidad y validación funcional",
+            "Diseñé la interfaz del chat web enfocada en que sea fácil de usar y convierta consultas en ventas.",
+            "Desarrollé los componentes web con Lit para que el chat se pueda insertar en cualquier página sin importar la tecnología que use.",
+            "Configuré la comunicación en tiempo real usando WebSockets y Socket.io para que los mensajes lleguen al instante.",
+            "Manejé estados locales complejos para que el chat se pueda personalizar según la marca de cada cliente.",
+            "Preparé el chatbot como un paquete NPM, permitiendo que otros desarrolladores lo instalen y configuren rápido.",
+            "Optimicé el peso final del código con Rollup para no afectar la velocidad de carga de las páginas donde se instala.",
+            "Logramos que la interacción de los usuarios subiera un 60% gracias al sistema de mensajes proactivos.",
           ],
           techStack: [
             "JavaScript",
@@ -337,13 +393,12 @@ const experiences = {
           description:
             "Aplicación web y API interna para la gestión operativa y administrativa del ecosistema Hi Chat.",
           highlights: [
-            "Implementación de vistas avanzadas con filtros y búsquedas eficientes",
-            "Integración con APIs internas utilizando NestJS",
-            "Refactorización de componentes y mejora de mantenibilidad",
-            "Implementación de la funcionalidad para importar productos desde un archivo Excel",
-            "Implementación de paneles de administración para productos, información y configuración, con gestión centralizada de datos y estados",
-            "Documentación técnica y testing funcional",
-            "Gestión de endpoints e integración mediante hooks"
+            "Creé vistas con filtros y buscadores optimizados para manejar grandes listas de datos sin lentitud.",
+            "Desarrollé un importador de productos desde Excel para que los clientes carguen sus catálogos masivamente.",
+            "Mejoré el código existente aplicando patrones de diseño para que sea más fácil de mantener y escalar.",
+            "Implementé la seguridad con JWT para proteger el acceso a la información administrativa.",
+            "Centralicé la gestión de estados para que los cambios en el panel se reflejen correctamente en toda la app.",
+            "Escribí la documentación técnica y realicé tests funcionales del core de la aplicación."
           ],
           techStack: [
             "JavaScript",
@@ -369,12 +424,11 @@ const experiences = {
           description:
             "Frontend administrativo para la gestión de clientes, productos y configuraciones del sistema.",
           highlights: [
-            "Interfaz organizada por columnas para manejo eficiente de datos",
-            "Flujos protegidos mediante JWT y validación de sesión",
-            "Integración y gestión de suscripciones y planes de servicio",
-            "Implementación de métricas, cálculos de negocio y visualización de estadísticas mediante gráficas",
-            "Integración de un panel de gestión y manejo de usuarios y empresas",
-            "Optimización de UX y mejoras visuales continuas",
+            "Diseñé un panel organizado que facilita la gestión de múltiples empresas y usuarios en un solo lugar.",
+            "Conecté el sistema de suscripciones y planes para automatizar el acceso a las funciones premium.",
+            "Creé dashboards con gráficas para que los clientes vean sus estadísticas y rendimiento en tiempo real.",
+            "Trabajé en mejoras constantes de la interfaz basadas en el feedback de los usuarios para hacerla más intuitiva.",
+            "Programé los cálculos de negocio para mostrar KPIs y métricas de uso de forma clara."
           ],
           techStack: [
             "JavaScript",
@@ -406,12 +460,12 @@ const experiences = {
           description:
             "Plataforma privada de encuestas en tiempo real con panel administrativo avanzado y visualización geográfica.",
           highlights: [
-            "Sistema de encuestas en tiempo real con comunicación instantánea",
-            "Implementar panel administrativo con gestión de roles y reportes dinámicos",
-            "Visualización de zonas y datos mediante Leaflet y GeoJSON",
-            "Diseño e implementación de base de datos relacional",
-            "Desarrollo de funcionalidad para analizar resultados de encuestas y generar reportes PDF de forma dinámica",
-            "implementar funcionalidad que permita monitorear en tiempo real la ubicación de los encuestadores",
+            "Implementé WebSockets para que las respuestas de las encuestas lleguen al panel en el mismo segundo en que se envían.",
+            "Usé Leaflet y GeoJSON para mostrar mapas con las zonas cubiertas y la ubicación de los encuestadores.",
+            "Creé un sistema para monitorear en vivo por dónde se mueven los encuestadores durante la jornada.",
+            "Desarrollé una función que genera reportes en PDF de forma automática con los resultados de las encuestas.",
+            "Diseñé la base de datos desde cero para que la información esté bien organizada y sea segura.",
+            "Armé un panel de administración con permisos para que cada usuario vea solo lo que le corresponde."
           ],
           techStack: [
             "TypeScript",
