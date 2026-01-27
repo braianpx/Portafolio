@@ -5,6 +5,7 @@ import ProjectCard from "./ProjectCard";
 import ProjectsFilters from "./ProjectsFilters";
 import { motion, AnimatePresence } from "framer-motion"; // Importamos Framer Motion
 import "./index.css";
+import { containerVariants } from "../../../utils/FrameMotion";
 
 const Project = ({ heading, projects }) => {
   const [activeStack, setActiveStack] = useState("all");
@@ -26,19 +27,6 @@ const Project = ({ heading, projects }) => {
 
     setFilteredProjects(result);
   }, [projects, activeStack, activeType]);
-
-  // Variantes para que las cards aparezcan una tras otra
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.15, // Retraso entre la aparición de cada card
-        duration: 0.3, 
-        ease: "easeOut" // <-- Mucho más ligero que 'spring'
-      },
-    },
-  };
 
   return (
     <Jumbotron fluid id="projects" className="bg-light m-0">

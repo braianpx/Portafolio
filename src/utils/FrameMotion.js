@@ -14,13 +14,15 @@ export const filterVariants = {
   inactive: { scale: 1 },
 };
 
-export const containerVariants = {
-  hidden: { opacity: 0 }, // Añadí un hidden inicial para que toda la sección pueda aparecer
-  visible: {
-    opacity: 1,
-    transition: {
-      delayChildren: 0.1, // Retraso antes de que los hijos comiencen a animarse
-      staggerChildren: 0.08 // Retraso entre cada hijo (cada tarjeta)
-    }
-  }
-};
+  // Variantes para que las cards aparezcan una tras otra
+ export const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15, // Retraso entre la aparición de cada card
+        duration: 0.3, 
+        ease: "easeOut" // <-- Mucho más ligero que 'spring'
+      },
+    },
+  };
