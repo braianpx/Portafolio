@@ -319,16 +319,16 @@ softSkills: [
 
 const contact = {
   show: true,
-  heading: "Contactos",
-  contacts:{
+  heading: "¡Hablemos!",
+  contacts: {
     email: 'braivaldez16@gmail.com',
     tel: '+54-381-201-9669',
-    whatsApp: '+54-381-626-1327'
+    address: 'Tucumán, Argentina'
   },
-  messages:{
-    tel:'Celular llamando al numero:',
-    wp:'WhatsApp al numero:',
-    email:'Mail a:'
+  messages: {
+    tel: 'Llamada directa',
+    wp: 'WhatsApp Business',
+    email: 'Correo Electrónico'
   }
 };
 
