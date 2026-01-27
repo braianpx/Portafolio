@@ -35,7 +35,7 @@ const ProjectCard = ({ project }) => {
         duration: 0.3, 
         ease: "easeOut"
       }}
-      xl={4} lg={4} md={6} sm={12} 
+      xl={4} lg={5} md={6} sm={12} 
       className="mb-4"
     >
       <Card className="project-card__container h-100">

@@ -127,6 +127,7 @@
   align-items: center;
 }
 
+
 /* Botón ver detalles */
 .project-card__btn-details {
   background: #000 !important;
@@ -174,6 +175,7 @@
 
 .project-card__links a:hover {
   border-bottom: 1px solid #000;
+  text-decoration: none !important;
 }
 .project-card__stack-more {
   background-color: #e0e0e0;
