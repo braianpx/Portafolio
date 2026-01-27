@@ -1,0 +1,77 @@
+/* ExperienceCompany.css */
+
+.company-card {
+  border-radius: 16px !important;
+  overflow: hidden;
+}
+
+.company-logo {
+  width: 54px;
+  height: 54px;
+  object-fit: cover;
+  margin-right: 15px;
+  border-radius: 10px;
+  border: 1px solid #f0f0f0;
+}
+
+.company-name {
+  letter-spacing: -0.02em;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.company-role-text {
+  font-size: 0.95rem;
+}
+
+/* Periodo y Links */
+.company-period-badge {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #6c757d; /* text-secondary */
+}
+
+.company-links-group {
+  border-left: 1px solid #dee2e6;
+  padding-left: 1rem;
+}
+
+.company-link {
+  font-size: 0.85rem;
+  color: #6c757d;
+  transition: color 0.2s ease;
+}
+
+.company-link:hover {
+  color: #111827;
+}
+
+/* Botón de Acción */
+.company-toggle-btn {
+  font-size: 1rem !important;
+  transition: all 0.3s ease !important;
+}
+
+/* Descripción */
+.company-description {
+  line-height: 1.6;
+  font-size: 0.95rem;
+  max-width: 90%;
+}
+
+/* Sección interna de Proyectos */
+.projects-container-header {
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .company-description {
+    max-width: 100%;
+  }
+  
+  .company-links-group {
+    border-left: none;
+    padding-left: 0;
+  }
+}

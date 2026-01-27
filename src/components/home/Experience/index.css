@@ -1,0 +1,31 @@
+/* Experience.css - Versión Corregida 2026 */
+
+.experience-section {
+  background-color: #f9fafb; 
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+
+/* Título Premium corregido */
+.experience-heading {
+  font-size: 2.75rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: #111827;
+  font-family: 'Inter', system-ui, sans-serif;
+  margin-bottom: 3.5rem !important;
+}
+
+/* Contenedor de la lista corregido: Volvemos al ancho completo del Row de Bootstrap */
+.experience-list {
+  width: 100%;
+  display: block; /* Quitamos el flex-column que encogía las cards */
+}
+
+/* Aseguramos que la sección respire bien */
+@media (max-width: 768px) {
+  .experience-heading {
+    font-size: 2.1rem;
+    padding: 0 1rem;
+  }
+}

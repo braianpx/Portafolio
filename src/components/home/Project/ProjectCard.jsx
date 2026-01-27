@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import ProjectDetailModal from "../Modals/ProjectDetailModal"; // <- importamos el modal
+import ProjectDetailModal from "../Modals/ProjectDetailModal";
+import { motion } from "framer-motion"; // Importamos Framer Motion
 import "./ProjectCard.css";
 
 const ProjectCard = ({ project }) => {
-  // Hook declarado siempre, antes de cualquier condicional
   const [showModal, setShowModal] = useState(false);
 
-  if (!project) return null; // aquí ya está seguro usar el hook
+  if (!project) return null;
 
   const {
     name,
@@ -22,9 +22,23 @@ const ProjectCard = ({ project }) => {
   } = project;
 
   return (
-    <Col xl={4} lg={4} md={6} sm={12} className="mb-4">
+    <Col 
+      as={motion.div} // Convertimos el Col de Bootstrap en un componente motion
+      layout="position" // Esta propiedad hace que la card se desplace suavemente a su nueva posición al filtrar
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={{ opacity: 1, scale: 1 }}
+      exit={{ opacity: 0, scale: 0.8, transition: { duration: 0.2 } }}
+      transition={{ 
+        type: "spring", 
+        stiffness: 260, 
+        damping: 20 ,
+        duration: 0.3, 
+        ease: "easeOut"
+      }}
+      xl={4} lg={5} md={6} sm={12} 
+      className="mb-4"
+    >
       <Card className="project-card__container h-100">
-        {/* Imagen */}
         <div className="project-card__image-wrapper">
           {image ? (
             <img src={image} alt={name} />
@@ -34,16 +48,10 @@ const ProjectCard = ({ project }) => {
         </div>
 
         <Card.Body className="project-card__body">
-          {/* Rol */}
           <span className="project-card__role">{rol}</span>
-
-          {/* Título */}
           <h5 className="project-card__title">{name}</h5>
-
-          {/* Descripción */}
           <p className="project-card__description">{shortDescription}</p>
 
-          {/* Tecnologías */}
           <div className="project-card__stack">
             {technologies?.frontEnd?.length > 0 && (
               <div className="project-card__stack-row">
@@ -79,7 +87,6 @@ const ProjectCard = ({ project }) => {
           </div>
         </Card.Body>
 
-        {/* Acciones */}
         <div className="project-card__actions">
           <Button
             className="project-card__btn-details"
@@ -103,7 +110,6 @@ const ProjectCard = ({ project }) => {
         </div>
       </Card>
 
-      {/* Modal reutilizando el componente que creamos */}
       <ProjectDetailModal
         show={showModal}
         onHide={() => setShowModal(false)}

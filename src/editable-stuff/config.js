@@ -22,6 +22,34 @@ import HiChatAssistantImg6 from "../assets/img/projects/HiChatAssistant/6.png";
 import HiChatAssistantImg7 from "../assets/img/projects/HiChatAssistant/7.png";
 //Saint Patrick
 import SaintPatrickLogo from "../assets/img/projects/SP.png";
+
+// Importaciones de Ionicons 5 (io5):
+import { 
+  IoLogoJavascript, IoLogoReact, IoLogoNodejs, IoLogoHtml5, IoLogoCss3,
+  IoCodeWorking, IoGitBranch, IoServer
+} from "react-icons/io5";
+
+// Importaciones de Simple Icons (si):
+import { 
+  SiPostgresql, SiMongodb, SiNestjs, SiExpress, SiSwagger, SiSass, SiTailwindcss, 
+  SiBootstrap, SiVite, SiRedux, SiTrello, SiPostman, SiTypescript, SiJest,
+  SiSequelize, SiSocketdotio, SiScrumalliance, SiTypeorm, SiMongoose, SiLit, SiLeaflet
+} from "react-icons/si";
+
+// Mapa de nombres de tecnología a componentes de íconos
+export const iconMap = {
+  JavaScript: IoLogoJavascript, TypeScript: SiTypescript, React: IoLogoReact,
+  Redux: SiRedux, "Redux Toolkit": SiRedux, "React Native": IoLogoReact, 
+  HTML5: IoLogoHtml5, CSS3: IoLogoCss3, Sass: SiSass, "Tailwind CSS": SiTailwindcss, 
+  Bootstrap: SiBootstrap, Vite: SiVite, "Lit": SiLit, "Leaflet": SiLeaflet, "GeoJSON": null,
+  "Node.js": IoLogoNodejs, NestJS: SiNestjs, Express: SiExpress,
+  "REST APIs": IoCodeWorking, WebSockets: SiSocketdotio, "Socket.IO": SiSocketdotio, 
+  Swagger: SiSwagger, PostgreSQL: SiPostgresql, MongoDB: SiMongodb, SQL: IoServer, 
+  NoSQL: IoServer, Sequelize: SiSequelize, TypeORM: SiTypeorm, Mongoose: SiMongoose, 
+  Typegoose: null, Git: IoGitBranch, Scrum: SiScrumalliance, Trello: SiTrello, 
+  Postman: SiPostman, Taiga: null, Jest: SiJest
+};
+
 // Navigation Bar SECTION
 const navBar = {
   show: true,
@@ -319,16 +347,16 @@ softSkills: [
 
 const contact = {
   show: true,
-  heading: "Contactos",
-  contacts:{
+  heading: "¡Hablemos!",
+  contacts: {
     email: 'braivaldez16@gmail.com',
     tel: '+54-381-201-9669',
-    whatsApp: '+54-381-626-1327'
+    address: 'Tucumán, Argentina'
   },
-  messages:{
-    tel:'Celular llamando al numero:',
-    wp:'WhatsApp al numero:',
-    email:'Mail a:'
+  messages: {
+    tel: 'Llamada directa',
+    wp: 'WhatsApp Business',
+    email: 'Correo Electrónico'
   }
 };
 
