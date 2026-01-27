@@ -26,7 +26,7 @@ const AboutMe = ({ heading, message, imageLink, resume }) => {
           
           {/* Animación lateral para la imagen */}
           <motion.div 
-            className="col-lg-4"
+            className="col-lg-5 justify-content-center col-xl-4"
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -37,7 +37,7 @@ const AboutMe = ({ heading, message, imageLink, resume }) => {
 
           {/* Animación para el contenido del texto */}
           <motion.div 
-            className="col-lg-8"
+            className="col-xl-8 col-lg-7"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
