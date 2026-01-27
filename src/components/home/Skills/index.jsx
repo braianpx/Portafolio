@@ -8,7 +8,7 @@ import "./index.css";
 const Skills = React.forwardRef(
   ({ heading, technologies, hardSkills, softSkills }, ref) => {
     return (
-      <Jumbotron ref={ref} fluid className="bg-white mt-0 pt-0" id="skills">
+      <Jumbotron ref={ref} fluid className="bg-white py-3 my-0" id="skills">
         <Container className="skills-container">
           <header className="skills-header">
             <h2 className="skills-title display-5 fw-bold text-center">{heading}</h2>

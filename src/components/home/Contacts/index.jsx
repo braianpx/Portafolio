@@ -12,11 +12,11 @@ const Contacts = ({ contacts, messages, heading }) => {
   const waNumber = contacts.tel.replace(/[^0-9]/g, '');
 
   return (
-    <Jumbotron className="bg-light m-0 py-5" id='contacts'>
+    <Jumbotron className="bg-light m-0 pt-2 pb-5" id='contacts'>
       <Container>
-        <Row className="justify-content-center mt-5">
+        <Row className="justify-content-center mt-0">
           {/* Título centrado horizontal y verticalmente dentro de esta columna */}
-          <h2 data-aos="fade-top" data-aos-delay="100" className="display-4 mb-4 text-center fw-bold text-dark" style={{ marginTop: 0 }}>
+          <h2 data-aos="fade-top" data-aos-delay="100" className="display-4 mb-5 pb-2 mt-0 text-center fw-bold text-dark" style={{ marginTop: 0 }}>
             {heading}
           </h2>
 
