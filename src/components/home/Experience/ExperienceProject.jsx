@@ -1,44 +1,64 @@
 import React from "react";
-import { Badge } from "react-bootstrap";
 import PrivateImagesNotice from "./PrivateImagesNotice";
 import ProjectCarousel from "./ProjectCarousel";
+import "./ExperienceProject.css"; // Importación del archivo CSS que creamos
 
 const ExperienceProject = ({ project }) => {
   const hasImages = project.images && project.images.length > 0;
 
   return (
-    <div className="mb-5 ps-3 border-start">
-      <h6 className="fw-semibold mb-1">{project.name}</h6>
+    <div className="experience-project-item mb-5">
+      {/* Encabezado: Título y Periodo */}
+      <div className="d-flex flex-wrap align-items-baseline gap-3 mb-2">
+        <h5 className="project-title mb-0">
+          {project.name}
+        </h5>
+        
+        {project.period && (
+          <span className="project-period-badge">
+            {project.period}
+          </span>
+        )}
+      </div>
 
-      {project.period && (
-        <small className="text-muted d-block mb-2">{project.period}</small>
-      )}
+      {/* Descripción del proyecto */}
+      <p className="project-description mb-3">
+        {project.description}
+      </p>
 
-      <p className="mb-2">{project.description}</p>
-
+      {/* Highlights / Puntos clave */}
       {project.highlights && (
-        <ul className="mb-2">
+        <ul className="project-highlights-list mb-3">
           {project.highlights.map((item, index) => (
-            <li key={index}>{item}</li>
+            <li key={index} className="project-highlight-item">
+              <span className="project-highlight-bullet">•</span>
+              <span>{item}</span>
+            </li>
           ))}
         </ul>
       )}
 
+      {/* Badges de Tecnologías Mejorados */}
       {project.techStack && (
-        <div className="d-flex flex-wrap gap-2 mb-3">
+        <div className="tech-stack-container">
           {project.techStack.map((tech) => (
-            <Badge bg="secondary" key={tech}>
+            <span key={tech} className="tech-badge">
               {tech}
-            </Badge>
+            </span>
           ))}
         </div>
       )}
 
-      {/* Si no hay imágenes */}
-      {!hasImages && <PrivateImagesNotice />}
-
-      {/* Carrusel si hay imágenes */}
-      {hasImages && <ProjectCarousel images={project.images} />}
+      {/* Área Multimedia (Carrusel o Aviso de Privacidad) */}
+      <div className="project-media-wrapper">
+        {!hasImages ? (
+          <div className="p-3">
+            <PrivateImagesNotice />
+          </div>
+        ) : (
+          <ProjectCarousel images={project.images} />
+        )}
+      </div>
     </div>
   );
 };

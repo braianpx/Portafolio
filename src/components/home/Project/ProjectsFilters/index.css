@@ -1,4 +1,19 @@
-/* CONTENEDOR GENERAL */
+/* ==========================================================================
+   CONTENEDOR PRINCIPAL Y SECCIÓN (Project.js)
+   ========================================================================== */
+
+.container_project {
+  margin-top: 0;
+}
+
+.bg-light.m-0 {
+  overflow: hidden; /* Evita scrolls horizontales durante las animaciones */
+}
+
+/* ==========================================================================
+   FILTROS (ProjectsFilters.js / FilterGroup.js)
+   ========================================================================== */
+
 .projects-filters-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -14,59 +29,212 @@
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
 }
 
-/* CARD DE CADA GRUPO */
 .filter-group-card {
   display: flex;
   flex-direction: column;
   gap: 0.9rem;
 }
 
-/* TÍTULO */
 .filter-group-title {
-  font-size: 1.2rem;
+  font-size: 1rem; /* Ajustado para mejor jerarquía en 2026 */
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #6b7280;
 }
 
-/* CONTENEDOR DE BOTONES */
 .filter-group-controls {
   display: flex;
   flex-wrap: wrap;
   gap: 0.6rem;
+  position: relative;
 }
 
-/* BOTÓN / CHIP */
+/* BOTÓN / CHIP (Modificado para Framer Motion) */
 .filter-chip {
-  padding: 0.45rem 0.9rem;
+  position: relative;
+  padding: 0.45rem 1.1rem;
   border-radius: 999px;
   border: 1px solid #e5e7eb;
-  background: #ffffff;
+  background: transparent; /* El fondo lo maneja la animación */
   color: #374151;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 500;
   cursor: pointer;
-  transition: all 0.25s ease;
+  outline: none !important;
+  transition: color 0.3s ease, border-color 0.3s ease;
+  overflow: visible; /* Permite ver el layoutId de Framer */
 }
 
-/* HOVER */
-.filter-chip:hover {
-  background: #f3f4f6;
+.filter-chip:hover:not(.active) {
+  background: rgba(243, 244, 246, 0.8);
   border-color: #d1d5db;
 }
 
-/* ACTIVO */
+/* El estado activo lo maneja mayormente motion.div, esto es para el texto */
 .filter-chip.active {
-  background: linear-gradient(135deg, #111827, #1f2937);
   color: #ffffff;
   border-color: transparent;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
-/* RESPONSIVE */
+/* ==========================================================================
+   CARDS DE PROYECTOS (ProjectCard.js)
+   ========================================================================== */
+
+.project-card__container {
+  border-radius: 14px;
+  border: 1px solid #e5e5e5;
+  background: #ffffff;
+  overflow: hidden;
+  /* Eliminamos transform: transition para que no choque con Framer Motion */
+  transition: box-shadow 0.3s ease; 
+}
+
+/* Hover suave compatible con animaciones de layout */
+.project-card__container:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.project-card__image-wrapper {
+  height: 180px;
+  background: #f4f4f4;
+  overflow: hidden;
+}
+
+.project-card__image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-card__image-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #eee, #f8f8f8);
+}
+
+.project-card__body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card__role {
+  align-self: flex-start;
+  padding: 4px 10px;
+  margin-bottom: 8px;
+  border: 1px solid #000;
+  border-radius: 999px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: #fff;
+}
+
+.project-card__title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 6px 0;
+  color: #111827;
+}
+
+.project-card__description {
+  font-size: 0.85rem;
+  color: #4b5563;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+/* STACK TAGS */
+.project-card__stack-row {
+  margin-bottom: 12px;
+}
+
+.project-card__stack-label {
+  display: block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #9ca3af;
+  margin-bottom: 6px;
+}
+
+.project-card__stack-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.project-card__stack-tag {
+  padding: 3px 10px;
+  font-size: 0.7rem;
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  color: #374151;
+}
+
+/* ACCIONES */
+.project-card__actions {
+  padding: 16px;
+  border-top: 1px solid #f3f4f6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-card__btn-details {
+  background-color: #111827 !important;
+  border: none !important;
+  font-size: 0.85rem !important;
+  padding: 8px 16px !important;
+  border-radius: 8px !important;
+  transition: opacity 0.2s;
+}
+
+.project-card__btn-details:hover {
+  opacity: 0.9;
+}
+
+.project-card__links {
+  display: flex;
+  gap: 12px;
+}
+
+.project-card__links a {
+  font-size: 0.8rem;
+  color: #6b7280;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.project-card__links a:hover {
+  color: #111827;
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+
 @media (max-width: 640px) {
   .projects-filters-wrapper {
     padding: 1.2rem;
+    margin: 1.5rem 0;
   }
+  
+  .project-card__image-wrapper {
+    height: 160px;
+  }
+}
+/* Fuerza el uso de la GPU para animaciones más fluidas */
+.project-card__container,
+.filter-chip,
+.row {
+  backface-visibility: hidden;
+  perspective: 1000px;
+  transform: translateZ(0);
 }

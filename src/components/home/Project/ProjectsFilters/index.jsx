@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "./index.css";
 import FilterGroup from "./FilterGroup";
 
@@ -15,14 +16,16 @@ const TYPE_FILTERS = [
   { label: "Grupal", value: "group" }
 ];
 
-const ProjectsFilters = ({
-  activeStack,
-  activeType,
-  onStackChange,
-  onTypeChange
-}) => {
+const ProjectsFilters = ({ activeStack, activeType, onStackChange, onTypeChange }) => {
   return (
-    <section className="projects-filters-wrapper">
+    <motion.section
+      layout="position"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
+      className="projects-filters-wrapper"
+    >
       <FilterGroup
         title="Stack tecnológico"
         filters={STACK_FILTERS}
@@ -36,7 +39,7 @@ const ProjectsFilters = ({
         activeValue={activeType}
         onChange={onTypeChange}
       />
-    </section>
+    </motion.section>
   );
 };
 
