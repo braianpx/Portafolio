@@ -63,8 +63,8 @@ const mainBody = {
   middleName: "Oscar",
   lastName: "Valdez",
 
-  role: "Full Stack & Software Developer | QA Tester",
-  specialization: "Especializado en React, Next.js, NestJS y PostgreSQL",
+  role: "Full Stack Software Engineer",
+  specialization: "Stack principal: React, Next.js, NestJS y PostgreSQL",
   tagline: "Diseño y desarrollo aplicaciones con foco en arquitectura, performance y mantenibilidad",
 
   icons: [
@@ -260,6 +260,7 @@ const skills = {
       items: [
         "JavaScript",
         "TypeScript",
+        "C#",
         "React",
         "Redux",
         "Redux Toolkit",
@@ -280,6 +281,7 @@ const skills = {
     items: [
       "Node.js",
       "NestJS",
+      ".NET",
       "Express",
       "REST APIs",
       "WebSockets",
@@ -292,6 +294,7 @@ const skills = {
       items: [
         "PostgreSQL",
         "MongoDB",
+        "SQL Server",
         "SQL",
         "NoSQL",
       ]
@@ -302,7 +305,8 @@ const skills = {
         "Sequelize",
         "TypeORM",
         "Mongoose",
-        "Typegoose"
+        "Typegoose",
+        "Entity Framework Core"
       ]
     },
     {
@@ -382,7 +386,7 @@ const experiences = {
       linkedin: "https://www.linkedin.com/company/hifenix",
       web: "https://hifenix.com.ar/",
       image: HifenixImg,
-      role: "Full Stack Developer | Software Developer | QA Tester",
+      role: "Full Stack Developer | Software Developer",
       period: "Nov 2024 – Ene 2026",
       description:
         "Empresa enfocada en el desarrollo de servicios y consultoría tecnológica, con fuerte especialización en automatización conversacional con inteligencia artificial. Su producto principal, Hi Chat Assistant, permite a las empresas automatizar atención y ventas 24/7 en múltiples canales digitales.",
