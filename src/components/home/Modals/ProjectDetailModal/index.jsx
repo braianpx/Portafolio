@@ -52,7 +52,7 @@ const ProjectDetailModal = ({ show, onHide, project }) => {
         <div className="project-detail-modal__section">
           <h5 className="section-title">Descripción</h5>
           {description.map((desc, idx) => (
-            <p key={idx}>{desc}</p>
+            <p key={idx} className="descriptions">{desc}</p>
           ))}
         </div>
 

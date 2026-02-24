@@ -6,6 +6,9 @@
   margin: 20px 0;
 }
 
+.descriptions{
+  margin: 0;
+}
 /* Chip individual */
 .info-chip {
   background-color: #fff;
