@@ -22,6 +22,8 @@ import HiChatAssistantImg6 from "../assets/img/projects/HiChatAssistant/6.png";
 import HiChatAssistantImg7 from "../assets/img/projects/HiChatAssistant/7.png";
 //Saint Patrick
 import SaintPatrickLogo from "../assets/img/projects/SP.png";
+// Zoco
+import ZocoImgLogo from "../assets/img/projects/zoco.png"
 
 // Importaciones de Ionicons 5 (io5):
 import { 
@@ -123,6 +125,41 @@ const projects = {
   gitHubUsername: "braianpx",
   projects: [
     {
+      id: 3,
+      completed: true,
+      name: "Zoco App",
+      shortDescription:
+        "Aplicación para resgistrar usuarios y gestiónar datos sensibles de los mismos.",
+      description: [
+        "Zoco App es una aplicacion diseñada para la gestion de datos de los usuarios, sus direcciones y estudios.",
+        "Desarrollo Full Stack con arquitectura en capas en .NET y C#, integrando autenticación (Login), sistema de roles y permisos, con un frontend dinámico en React y TypeScript.",
+        "El proyecto fue desarrollado como un desafío técnico, demostrando la capacidad de aprendizaje y adaptación a un stack corporativo."
+      ],
+      rol: "Full Stack Developer",
+      modality: "individual",
+      scope: "fullstack",
+      responsive: true,
+      features: [
+        "Implementar arquitectura en capas para una separación clara de responsabilidades en el backend.",
+        "Desarrollar un sistema de autenticación y registro seguro basado en JWT.",
+        "Gestionar permisos y acceso mediante un sistema de control de roles (RBAC).",
+        "Diseñar entidades de base de datos relacionales para usuarios, domicilios y estudios.",
+        "Construir un panel administrativo para la gestión centralizada de la información.",
+        "Proteger rutas y endpoints mediante validaciones de seguridad en ambos lados de la aplicación.",
+        "Garantizar una experiencia fluida mediante una SPA con diseño totalmente responsive.",
+        "Validar la integridad de los datos en formularios complejos con persistencia segura.",
+      ],
+      technologies: {
+        frontEnd: ["TypeScript", "React", "HTML", "CSS" ],
+        backEnd: ["C#", ".NET 8", "SQL Server", "Entity Framework Core" ]
+      },
+      image: ZocoImgLogo,
+      images: [],
+      link: "https://zoco-fullstack-frontend.vercel.app/",
+      repo: "https://github.com/braianpx/Repo-de-referencia-Zoco-app",
+      color: "null"
+    },
+    {
       id: 1,
       completed: true,
       name: "Banco Saint Patrick",
@@ -130,8 +167,8 @@ const projects = {
         "Plataforma financiera con API REST y wallet virtual para gestión de transferencias y autenticación.",
       description: [
         "Saint Patrick Bank es una plataforma financiera diseñada para simular el funcionamiento de un banco digital.",
-        "Desarrollé la API REST enfocada en autenticación, manejo de wallets, transferencias y control de acceso mediante roles.",
-        "El proyecto permitió aplicar arquitectura modular, seguridad con tokens y persistencia en bases de datos relacionales."
+        "API REST robusta que gestiona la lógica de wallets, transacciones financieras y un sistema de permisos por roles construido con arquitectura modular, seguridad basada en tokens y persistencia en base de datos relacional.",
+        "El objetivo fue colaborar en el desarrollo de una idea grupal propia, aplicando tecnologías líderes para resolver desafíos reales de un sistema de pagos."
       ],
       rol: "Back End Developer",
       modality: "group",
@@ -160,11 +197,11 @@ const projects = {
       completed: true,
       name: "Psiconnect",
       shortDescription:
-        "Plataforma full stack de terapia online con pagos, calendario y sistema de usuarios.",
+        "Plataforma full stack de terapia online con pagos, calendario. chat 1 a 1 y sistema de usuarios.",
       description: [
-        "Proyecto final grupal del bootcamp Henry enfocado en atención psicológica online.",
-        "Participé en el desarrollo tanto del frontend como del backend.",
-        "Incluye autenticación, pagos, notificaciones, paneles administrativos y sistema de reseñas."
+        "Pisconnect es una aplicación web dedicada a generar espacios de conexión virtual online exclusiva para psicólogos y sus clientes.",
+        "Aplicación Full Stack que integra autenticación, pagos, notificaciones, calendario, paneles administrativos, chat y sistema de reseñas, con interfaz intuitiva y desarrollada en arquitectura modular.",
+        "El objetivo fue desarrollar una solución funcional para un problema real colaborando en un equipo grupal bajo estándares profesionales del mercado para aprobar el proyecto final grupal del bootcamp Henry."
       ],
       rol: "Full Stack Developer",
       modality: "group",
@@ -188,7 +225,6 @@ const projects = {
       repo: "https://github.com/orgs/Psiconnect/repositories",
       color: "cadetblue"
     },
-
     {
       id: 3,
       completed: true,
@@ -196,9 +232,9 @@ const projects = {
       shortDescription:
         "Aplicación individual para consulta y gestión de razas de perros.",
       description: [
-        "Proyecto individual desarrollado desde cero.",
-        "Incluye API y SPA con búsqueda, filtros, ordenamiento y creación de datos.",
-        "El objetivo fue consolidar conocimientos full stack."
+        "Dogs PI es una Single Page Application (SPA) diseñada para ofrecer información detallada y búsqueda avanzada sobre las distintas razas de perros del mundo.",
+        "Aplicación Full Stack que incluye filtrados combinados, ordenamientos, creación de nuevas razas y consumo de una API externa, con persistencia en base de datos local y una interfaz dinámica.",
+        "El objetivo fue consolidar conocimientos full stack en soy Henry."
       ],
       rol: "Full Stack Developer",
       modality: "individual",
@@ -220,7 +256,7 @@ const projects = {
       link: "https://dogs-pi-braianpx.vercel.app",
       repo: "https://github.com/braianpx/Dogs-Pi",
       color: "mediumturquoise"
-    },
+    }
   ]
 };
 
